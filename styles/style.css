@@ -39,6 +39,10 @@ header {
   align-items: center;
 }
 
+.hamburguer-menu{
+  display: none;
+}
+
 .logo-wrapper {
   position: relative;
   left: -5rem;
@@ -154,9 +158,78 @@ main {
   width: 30rem;
 }
 
-@media (max-width: 800px) {
-  .menu-wrapper ul{
-    display: none;
+@media (max-width: 812px) {
+  .hamburguer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 4rem;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    z-index: 2;
+  }
+
+  .menu-wrapper ul {
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    font-size: 4rem;
+
+    background: var(--light-blue);
+    
+    align-items: center;
+    z-index: 1;
+}
+
+  .menu-wrapper ul a + a {
+    margin: 0;
+    
+  }
+
+  .close-menu {
+    animation-name: closeMenu;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+  }
+
+  @keyframes closeMenu {
+    from {
+      margin-left: 0%;
+    }
+
+    to {
+      margin-left: 100%;
+    }
+  }
+  
+  .show-menu {
+   animation-name: showMenu;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+  }
+
+  @keyframes showMenu {
+    from{
+      margin-left: 100%;
+    }
+
+    to{
+      margin-left: 0%;
+  }
   }
 
   .logo-wrapper {
