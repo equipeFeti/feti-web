@@ -68,7 +68,7 @@ header {
 }
 
 .menu-wrapper ul li {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: white;
 
   transition: color 0.3s;
@@ -135,7 +135,7 @@ main {
   border-radius: 8px;
   border: 0;
 
-  margin-top: 2rem;
+  margin-top: 6rem;
 
 
 
