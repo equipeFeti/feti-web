@@ -29,6 +29,27 @@ header {
   background: var(--dark-blue);
 }
 
+.btn {
+  width: 40%;
+  height: 2rem;
+
+  color: var(--dark-blue);
+  background: var(--yellow);
+
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--dark-blue);
+}
+
+
+.btn:hover {
+  filter: brightness(0.8);
+}
+
 .header-wrapper {
   width: 100%;
   max-width: 1200px;
@@ -158,13 +179,62 @@ main {
   width: 30rem;
 }
 
+.section-wrapper{
+  width:100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.section-text{
+  flex: 1;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column; 
+  gap: 2rem;
+    
+}
+.section-text h1{
+  color: var(--dark-blue);
+  font-weight: bold;
+  font-size: 80px;
+}
+.section-text p{
+  width: 100%;
+  color: var(--dark-blue);
+  font-size: 18px;
+  text-align: justify;
+  
+}
+.section-video{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe{
+width:85%;
+}
+
 @media (max-width: 812px) {
+  
+  /* Home*/
+
+  header {
+    position: fixed;
+  }
+
   .hamburguer-menu{
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: absolute;
+    position: fixed;
     right: 4rem;
 
     color: #fff;
@@ -174,14 +244,15 @@ main {
     z-index: 2;
   }
 
+
   .menu-wrapper ul {
     overflow: hidden;
 
-    position: absolute;
-    top: 0;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
+    top: 0;
 
     flex-direction: column;
     justify-content: center;
@@ -193,6 +264,8 @@ main {
     
     align-items: center;
     z-index: 1;
+
+    margin: 0;
 }
 
   .menu-wrapper ul a + a {
@@ -239,6 +312,10 @@ main {
     justify-content: center;
   }
 
+  .main-wrapper {
+    margin-top: 8rem;
+  }
+
   .main-img{
     display: none;
   }
@@ -264,5 +341,21 @@ main {
     box-shadow: 10px 10px 1px var(--cian);
   }
 
+  /* about us */
+
+  .section-wrapper{
+    flex-direction: column;
+    margin-top: 8rem;
+    text-align: left;
+  }
+  iframe
+  {
+    width: 100%;
+    height: 35vh;
+    margin-top: 2rem;
+  }
+  .section-text h1{
+    font-size: 30px;
+  }
   
 }
