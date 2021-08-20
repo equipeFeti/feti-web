@@ -221,6 +221,24 @@ iframe{
 width:85%;
 }
 
+@media (min-height: 720px) and (max-height: 909px){
+  .main-img img {
+    width: 22.5rem;
+  }
+  .main-text h1{
+    font-size: 10rem;
+    line-height: 8rem;
+  }
+
+  .main-text h3 {
+    font-size: 5rem;
+  }
+
+  .main-text button {
+    margin-top: 4rem;
+  }
+}
+
 @media (max-width: 812px) {
   
   /* Home*/
@@ -321,12 +339,12 @@ width:85%;
   }
   
   .main-text h1{
-    font-size: 8rem;
-    line-height: 7rem;
+    font-size: 6rem;
+    line-height: 5rem;
   }
 
   .main-text h3{
-    font-size: 4rem;
+    font-size: 3.4rem;
   }
 
   .main-text button{
@@ -336,7 +354,7 @@ width:85%;
 
     color: var(--dark-blue);
     
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     box-shadow: 10px 10px 1px var(--cian);
   }
