@@ -108,6 +108,8 @@ main {
   height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
+
+  overflow-x: hidden;
 }
 
 .main-wrapper {
@@ -220,6 +222,80 @@ main {
 iframe{
 width:85%;
 }
+
+/* Editais/Regulamentos: Documents Page  */
+
+.documents-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  width: 100%;
+  max-width: 1200px;
+
+  padding: 0 2rem;
+}
+
+.editais-wrapper,
+.rules-wrapper 
+{
+  width: 150%;
+}
+
+.documents-wrapper h1 {
+  font-size: 4rem;
+
+  color: var(--dark-blue);
+}
+
+.documents-wrapper p {
+  font-size: 1.5rem;
+
+  color: var(--light-blue);
+}
+
+.document-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 15rem;
+  height: 15rem;
+  
+  padding: 1rem;
+  margin-top: 2rem;
+
+  border-radius: 0.5rem;
+  
+  background: var(--light-blue);
+}
+
+.document-title {
+  background: var(--yellow);
+  color: var(--dark-blue);
+
+  width: 100%;
+
+  padding: 1rem 2rem;
+  text-align: center;
+
+  position: relative;
+  left: -2rem;
+  top: -0.5rem;
+
+  border-radius: 0.5rem;
+}
+
+.document-image {
+  font-size: 4rem;
+  background: #fff;
+  
+
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
 
 @media (min-height: 720px) and (max-height: 909px){
   .main-img img {
