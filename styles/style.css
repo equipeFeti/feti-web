@@ -357,45 +357,67 @@ width:85%;
     font-size: 30px;
   }
   
+  }
 }
 /* contact */
 .menu-contact{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: calc(100vh - 100px);
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  height: calc(100vh - 100px);
 }
 .menu-text-contact {
   display:flex;
-  text-align: left;
   flex-direction: column;
-  padding-top: 6rem;
+  text-align: center;
+  margin-right: 30px;
+  text-align: left;
+ 
+}
+.menu-text-contact h3{
+  color: #272d5f;
+}
+.text-mapa{
+  display: flex;
+  align-items: center;
   justify-content: center;
+  height:  calc(100vh - 180px);
+  margin-bottom: -10vh; 
+}
+.mapa{
+  width: 500px;
+  height: 35vh;
+}
+.mapa iframe{
+  width: 100%; 
+  height: 100%;
 }
 .menu-text-contact h1 {
-  font-size: 5rem;
-  color: var(--light-blue);
+  font-size: 4rem;
+  color: var(--dark-blue);
+  line-height: 2rem;
+  margin-bottom: 1rem;
 }
 .menu-text-contact p{
-  font-size: 2rem;
-  color: var(--dark-blue);
-  margin-top: 16px;
-  text
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+.ps{
+  margin-top: 2rem;
 }
 .wrapper{
-  display: grid;
-  grid-template-columns: 5rem 5rem 5rem;
-  grid-auto-flow: column;
-  width: 100%;
-  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  width:  100%;
+  max-width: 400px;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   margin: 0 auto;
-  padding-bottom: 4rem;
-  grid-column-gap: 4rem;
+  position: absolute;
+  bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
 }
 .wrapper a {
   width: 30px;
@@ -482,4 +504,34 @@ width:85%;
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
+}
+@media (max-width: 812px){
+  /* Contact responsive*/
+  .menu-contact{
+    flex-direction: column ;
+  }
+  .menu-text-contact{
+    margin-right: 1px;
+    margin-top: 20rem;
+  }
+  .menu-text-contact p{
+    font-size: 16px;
+  }
+  .text-mapa{
+    flex-direction: column;
+    padding-bottom: 4vh;
+    height: calc(100vh - 250px);
+    padding-bottom: 50px;
+  }
+  .mapa{
+    width: 100%;
+  }
+  .menu-text-contact h1{
+    font-size: 2.5rem;
+    line-height: 0rem;
+  }
+  .menu-text-contact p{
+      line-height: 1.5;   
+  }
+
 }
