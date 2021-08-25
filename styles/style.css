@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
   --dark-blue: #272d5f;
   --light-blue: #2a4b9a;
@@ -31,6 +32,7 @@ header {
 
 .btn {
   width: 40%;
+  margin-left: 1rem;
   height: 2rem;
 
   color: var(--dark-blue);
@@ -39,15 +41,21 @@ header {
   border: 0;
   border-radius: 0.5rem;
   cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 10px 10px 1px var(--cian);
+  filter: brightness(0.8);
+ 
+
 }
 
 .btn a {
   color: var(--dark-blue);
-}
 
-
-.btn:hover {
-  filter: brightness(0.8);
+  transition: all 0.3s;
 }
 
 .header-wrapper {
@@ -103,9 +111,9 @@ header {
   color: var(--yellow);
 }
 
-main {
+.main-home {
   width: 100%;
-  height: calc(100vh - 100px);
+
   display: flex;
   justify-content: center;
 
@@ -117,6 +125,7 @@ main {
   max-width: 1200px;
   
   display: flex;
+  height: calc(100vh - 100px);
   justify-content: space-between;
   align-items: center;
 
@@ -212,6 +221,8 @@ main {
   text-align: justify;
   
 }
+
+
 .section-video{
   flex: 1;
   display: flex;
@@ -225,6 +236,14 @@ width:85%;
 
 /* Editais/Regulamentos: Documents Page  */
 
+.documents-page {
+  width: 100%;
+
+  display: flex;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .documents-wrapper{
   display: flex;
   flex-direction: column;
@@ -316,96 +335,32 @@ width:85%;
 }
 
 
-@media (min-height: 720px) and (max-height: 909px){
-  .main-img img {
-    width: 22.5rem;
-  }
-  .main-text h1{
-    font-size: 10rem;
-    line-height: 8rem;
-  }
 
-  .main-text h3 {
-    font-size: 5rem;
-  }
+@media (max-height: 910px) {
 
-  .main-text button {
-    margin-top: 4rem;
-  }
+  /* Home */
+
+    .main-img img {
+      width: 22.5rem;
+    }
+    .main-text h1{
+      font-size: 10rem;
+      line-height: 8rem;
+    }
+  
+    .main-text h3 {
+      font-size: 5rem;
+    }
+  
+    .main-text button {
+      margin-top: 4rem;
+    }
 }
 
 
 
-@media (max-width: 812px) {
+@media (max-height: 824px) {
   
-  .owl-carousel {
-    position: relative;
-    z-index: -1;
-    flex-wrap: nowrap;
-  }
-  
-  .owl-stage {
-    display: flex;
-    gap: 6rem;
-  }
-
-  .document-box { 
-    position: relative;
-    z-index: 0;
-
-    width: 14rem;
-    height: 14rem;
-    margin-top: 1rem;
-    
-  }
-
-  
-  .editais-wrapper p
-  {
-    width: 100%;
-    font-size: 1.35rem;
-    max-width: 72%;
-  }
-
-  .editais-wrapper h1 {
-    font-size: 3.5rem;
-   
-  }
-
-  .rules-wrapper h1 {
-    font-size: 3.5rem;
-    margin-top: 2rem;
-  }
-
-  
-
-  .rules-wrapper p {
-    width: 100%;
-    font-size: 1.35rem;
-    max-width: 75%;
-  }
-
-  .documents-page {
-    height: calc(100vh - 100px);
-  }
-
- .documents-wrapper{
-    margin-top: 150px;
-   justify-content: space-between;
- }
-
- .document-box .document-description {
-   width: 5rem;
-   height: 5rem;
-
-   display: flex;
-   justify-content: center;
-
-   position: relative;
-   top: -1rem;
-   right: -.4rem;
- }
-
   /* Home*/
 
   header {
@@ -497,7 +452,14 @@ width:85%;
   }
 
   .main-wrapper {
-    margin-top: 8rem;
+    height: 100vh;
+  }
+
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .main-img{
@@ -505,6 +467,8 @@ width:85%;
   }
   
   .main-text h1{
+    width: 100%;
+    text-align: left;
     font-size: 6rem;
     line-height: 5rem;
   }
@@ -523,6 +487,8 @@ width:85%;
     margin-top: 2rem;
 
     box-shadow: 10px 10px 1px var(--cian);
+
+    align-self: left;
   }
 
   /* about us */
@@ -541,6 +507,79 @@ width:85%;
   .section-text h1{
     font-size: 30px;
   }
+
+  /* Documents page */
+
+  .owl-carousel {
+    position: relative;
+    z-index: 1;
+    flex-wrap: nowrap;
+  }
+  
+  .owl-stage {
+    display: flex;
+    gap: 6rem;
+  }
+
+  .document-box { 
+    position: relative;
+    z-index: 0;
+
+    width: 14rem;
+    height: 14rem;
+    margin-top: 1rem;
+    
+  }
+
+  .documents-wrapper {
+    margin-top: 100px;
+  }
+  
+  .editais-wrapper p
+  {
+    width: 100%;
+    font-size: 1.35rem;
+    max-width: 72%;
+  }
+
+  .editais-wrapper h1 {
+    font-size: 3.5rem;
+   
+  }
+
+  .rules-wrapper h1 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+
+  
+
+  .rules-wrapper p {
+    width: 100%;
+    font-size: 1.35rem;
+    max-width: 75%;
+  }
+
+  .documents-page {
+    height: calc(100vh);
+  }
+
+ .documents-wrapper{
+    margin-top: 150px;
+   justify-content: space-between;
+ }
+
+ .document-box .document-description {
+   width: 5rem;
+   height: 5rem;
+
+   display: flex;
+   justify-content: center;
+
+   position: relative;
+   top: -1rem;
+   right: -.4rem;
+ }
   
 }
 /* iphone 5 < */
