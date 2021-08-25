@@ -368,33 +368,39 @@ width:85%;
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
 }
-@media (max-width: 812px){
+@media (max-width: 1065px){
   /* Contact responsive*/
   .menu-contact{
     flex-direction: column ;
   }
   .menu-text-contact{
     margin-right: 1px;
-    margin-top: 8rem;
+    margin-top: 1rem;
   }
   .menu-text-contact p{
-    font-size: 16px;
+    font-size: 25px;
   }
   .text-mapa{
     flex-direction: column;
     padding-bottom: 4vh;
     height: calc(100vh - 250px);
-    padding-bottom: 50px;
+    margin-bottom: 0%;
   }
   .mapa{
-    width: 340px;
+    width: 500px;
+    padding-top: 2rem;
   }
   .menu-text-contact h1{
     font-size: 2.5rem;
     line-height: 0rem;
   }
   .menu-text-contact p{
-      line-height: 1.5;   
+   line-height: 2rem;   
+  }
+  @media(max-width: 812px){
+  .text-mapa{
+    padding-top: 5vh;
+  }
   }
 
 }
@@ -549,6 +555,16 @@ width:85%;
   .section-text h1{
     font-size: 30px;
   }
-  
-
-}
+  @media (max-width:813px) and (min-width:636px)
+  {
+    
+  .section-video iframe{
+    width: 600px;
+  }
+  } 
+  @media(max-width: 635px) and (min-width: 454px)
+  {
+    .section-video iframe{
+      width: 450px;
+    }
+  }
