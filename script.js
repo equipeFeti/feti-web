@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu-wrapper-ul')
 const body = document.querySelector('#body');
 
 
+
 hambButton.addEventListener('click', () => {
   const menuClassActive = menu.classList[1]
   console.log(menuClassActive)
