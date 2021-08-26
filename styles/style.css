@@ -232,55 +232,54 @@ header {
 width:85%;
 }
  /* contact */ 
-.menu-contact{
-  display: flex;
-  height: calc(100vh - 100px);
+
+.menu-contact-wrapper {
   width: 100%;
   max-width: 1200px;
-  justify-content: center;
   margin: 0 auto;
-}
-.menu-text-contact {
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-  margin-right: 30px;
-  text-align: left;
- 
-}
-.menu-text-contact h3{
-  color: #272d5f;
-}
-.text-mapa{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:  calc(100vh - 180px);
-  margin-bottom: -10vh; 
-}
-.mapa{
-  width: 100%;
-  height: 100%;
+  height: calc(100vh - 100px);
 
   display: flex;
+  justify-content: space-around;
   align-items: center;
+
+  padding: 0rem 2rem ;
 }
-.menu-text-contact h1 {
+
+.text-mapa {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.text-mapa h3{
+  color: #272d5f;
+}
+.mapa{
+  height: 40%;
+  width: 50%;
+}
+
+.mapa iframe {
+  height: 100%;
+  width: 100%;
+}
+.text-mapa h1 {
   font-size: 4rem;
   color: var(--dark-blue);
   line-height: 2rem;
   margin-bottom: 1rem;
 }
-.menu-text-contact p{
+.text-mapa p{
   font-size: 1.5rem;
   color: var(--light-blue);
 }
 .ps{
   margin-top: 2rem;
 }
+
+
 .wrapper{
   display: flex;
-  flex-direction: row;
   width:  100%;
   max-width: 600px;
   justify-content: center;
@@ -512,77 +511,9 @@ width:85%;
       margin-top: 4rem;
     }
 }
-
-
-
-
-@media (max-width: 812px){
-  /* Contact responsive*/
-  .menu-contact{
-    flex-direction: column ;
-  }
-  .menu-text-contact{
-    margin-right: 1px;
-    margin-top: 1rem;
-  }
-  .menu-text-contact p{
-    font-size: 25px;
-  }
-  .text-mapa{
-    flex-direction: column;
-    padding-bottom: 4vh;
-    height: calc(100vh - 250px);
-    margin-bottom: 0%;
-  }
-  .mapa{
-    padding-top: 2rem;
-    width: 100%;
-    height: 30vh;
-  }
-  .mapa iframe{
-    
-  }
-  .menu-text-contact h1{
-    font-size: 2.5rem;
-    line-height: 0rem;
-  }
-  .menu-text-contact p{
-   line-height: 2rem;   
-  }
-  .text-mapa{
-    padding-top: 8vh;
-
-  }
-  .menu-text-contact p{
-    font-size: 14px;
-  }
-  
-
-}
-@media (max-width: 360px)
-{
-  .menu-text-contact p 
-  {
-    font-size: 15px;
-    line-height: 20px;
-    
-  }
-  .menu-contact{
-    flex-direction: column ;
-  }
-  .menu-text-contact h1 {
-    font-size: 1.5rem;
-    margin-top: 9rem;
-  }
-  .mapa{
-    width: 270px;
-  }
-  
-}
 @media (max-width: 812px) {
   
   /* Home*/
-
   header {
     position: fixed;
     top: 0;
@@ -736,7 +667,25 @@ width:85%;
   .section-text h1{
     font-size: 30px;
   }
-
+ 
+  /*contact page*/
+  .menu-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+   }
+   .text-mapa p{
+     font-size: 1.09rem;
+   }
+   .text-mapa h1{
+     font-size: 2rem;
+     margin-bottom: 0;
+   }
+   .mapa{
+    width: 100%;
+   }
   /* Documents page */
 
   .owl-carousel {
