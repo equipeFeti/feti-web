@@ -232,56 +232,54 @@ header {
 width:85%;
 }
  /* contact */ 
-.menu-contact{
-  display: flex;
-  height: calc(100vh - 100px);
+
+.menu-contact-wrapper {
   width: 100%;
   max-width: 1200px;
-  justify-content: center;
   margin: 0 auto;
+  height: calc(100vh - 100px);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0rem 2rem ;
 }
-.menu-text-contact {
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-  margin-right: 30px;
-  text-align: left;
- 
+
+.text-mapa {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
-.menu-text-contact h3{
+.text-mapa h3{
   color: #272d5f;
 }
-.text-mapa{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:  calc(100vh - 180px);
-  margin-bottom: -10vh; 
-}
 .mapa{
-  width: 500px;
-  height: 35vh;
+  height: 40%;
+  width: 50%;
 }
-.mapa iframe{
-  width: 100%; 
+
+.mapa iframe {
   height: 100%;
+  width: 100%;
 }
-.menu-text-contact h1 {
+.text-mapa h1 {
   font-size: 4rem;
   color: var(--dark-blue);
   line-height: 2rem;
   margin-bottom: 1rem;
 }
-.menu-text-contact p{
+.text-mapa p{
   font-size: 1.5rem;
   color: var(--light-blue);
 }
 .ps{
   margin-top: 2rem;
 }
+
+
 .wrapper{
   display: flex;
-  flex-direction: row;
   width:  100%;
   max-width: 600px;
   justify-content: center;
@@ -513,59 +511,9 @@ width:85%;
       margin-top: 4rem;
     }
 }
-
-
-
-
-@media (max-width: 812px){
-  /* Contact responsive*/
-  .menu-contact{
-    flex-direction: column ;
-  }
-  .menu-text-contact{
-    margin-right: 1px;
-    margin-top: 8rem;
-  }
-  .menu-text-contact p{
-    font-size: 16px;
-  }
-  .text-mapa{
-    flex-direction: column;
-    padding-bottom: 4vh;
-    height: calc(100vh - 250px);
-    padding-bottom: 50px;
-  }
-  .mapa{
-    width: 340px;
-  }
-  .menu-text-contact h1{
-    font-size: 2.5rem;
-    line-height: 0rem;
-  }
-  .menu-text-contact p{
-      line-height: 1.5;   
-  }
-
-}
-@media (max-width: 320px)
-{
-  .menu-text-contact p 
-  {
-    font-size: 14px;
-  }
-  .menu-text-contact h1 {
-    font-size: 2rem;
-    margin-top: 8rem;
-  }
-  .mapa{
-    width:250px;
-  }
-  
-}
 @media (max-width: 812px) {
   
   /* Home*/
-
   header {
     position: fixed;
     top: 0;
@@ -719,7 +667,25 @@ width:85%;
   .section-text h1{
     font-size: 30px;
   }
-
+ 
+  /*contact page*/
+  .menu-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+   }
+   .text-mapa p{
+     font-size: 1.09rem;
+   }
+   .text-mapa h1{
+     font-size: 2rem;
+     margin-bottom: 0;
+   }
+   .mapa{
+    width: 100%;
+   }
   /* Documents page */
 
   .owl-carousel {
@@ -805,4 +771,4 @@ width:85%;
   .rules-wrapper h1 {
     font-size: 3.2rem;
   }
-}}
+}
