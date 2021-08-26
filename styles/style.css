@@ -368,7 +368,7 @@ width:85%;
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
 }
-@media (max-width: 1065px){
+@media (max-width: 1065px) and (min-width:800px){
   /* Contact responsive*/
   .menu-contact{
     flex-direction: column ;
@@ -404,18 +404,23 @@ width:85%;
   }
 
 }
-@media (max-width: 320px)
+@media (max-width: 360px)
 {
   .menu-text-contact p 
   {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 20px;
+    
+  }
+  .menu-contact{
+    flex-direction: column ;
   }
   .menu-text-contact h1 {
-    font-size: 2rem;
-    margin-top: 8rem;
+    font-size: 1.5rem;
+    margin-top: 9rem;
   }
   .mapa{
-    width:250px;
+    width: 270px;
   }
   
 }
@@ -568,3 +573,4 @@ width:85%;
       width: 450px;
     }
   }
+}
