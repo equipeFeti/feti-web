@@ -181,12 +181,14 @@ header {
 
 .main-img{
   flex: 1;
+  height: calc(100vh - 100px);
+  width: 50%;
+  position: relative;
 }
-
 .main-img img {
+  width: 100%;
   position: absolute;
-  bottom: 0rem;
-  width: 30rem;
+  bottom:0;
 }
 .section-wrapper{
   width:100%;
