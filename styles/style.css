@@ -188,7 +188,7 @@ header {
 .main-img img {
   width: 100%;
   position: absolute;
-  bottom:0;
+  bottom: 0;
 }
 .section-wrapper{
   width:100%;
@@ -217,7 +217,7 @@ header {
 .section-text p{
   width: 100%;
   color: var(--dark-blue);
-  font-size: 18px;
+  font-size: 1.5rem;
   text-align: justify;
   
 }
