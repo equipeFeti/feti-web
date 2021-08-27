@@ -258,7 +258,11 @@ width:85%;
   height: 40%;
   width: 50%;
 }
+.mapa h1{
+  font-size: 4rem;
+  color: var(--dark-blue);
 
+}
 .mapa iframe {
   height: 100%;
   width: 100%;
