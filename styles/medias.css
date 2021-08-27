@@ -1,26 +1,35 @@
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) { }
 
-}
-
-@media (min-width: 576px) { 
-  
-
- }
+@media (min-width: 576px) {  }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) and (max-width:991.98px) {
+  
+  /* Home*/
 
+  /*about us*/
+  .text-mapa p{
+    font-size: 1.5rem;
+  }
+  .text-mapa h1{
+    font-size: 2.5rem;
+  }
+  }
+  .mapa{
+    width:72%;
+  }
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) and (max-width:1200px){ 
+  .text-mapa p{
+    font-size: 1.5rem;
+  }
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-  .main-img img {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+@media (min-width: 1200px) and (max-width:1366px) { 
+  .mapa{
+    width: 40%
   }
  }
 
@@ -226,16 +235,6 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
-   }
-   .text-mapa p{
-     font-size: 1.09rem;
-   }
-   .text-mapa h1{
-     font-size: 2rem;
-     margin-bottom: 0;
-   }
-   .mapa{
-    width: 100%;
    }
   /* Documents page */
 
