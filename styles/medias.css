@@ -3,6 +3,18 @@
   .mapa {
     width: 40%;
   }
+
+  .main-img img{
+    width: 65%;
+  }
+
+  .main-text h1{
+    font-size: 9.5rem;
+  }
+
+  .main-text h3 {
+    font-size: 4rem;
+  }
 }
 
 /* generic */
