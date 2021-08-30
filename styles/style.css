@@ -217,7 +217,7 @@ header {
 .section-text p{
   width: 100%;
   color: var(--dark-blue);
-  font-size: 18px;
+  font-size: 1.5rem;
   text-align: justify;
   
 }
@@ -228,10 +228,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 40%;
+  width: 50%;
 }
 
 .section-video iframe{
-width:85%;
+width:90%;
+height: 100%;
 }
  /* contact */ 
 
@@ -293,7 +296,7 @@ width:85%;
   align-items: center;
   margin: 0 auto;
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
 }
 
 .social-media {
@@ -400,7 +403,8 @@ width:85%;
   
   width: 150%;
 
-  padding: 3rem 20%;
+  padding: 4rem 100px;
+  margin-top: 40px;
   gap: 4rem;
 
   overflow-x: hidden;
