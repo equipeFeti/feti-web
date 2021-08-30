@@ -225,11 +225,10 @@
   width: 72%;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-}
+
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   /* home */
 
   /* about us */
@@ -327,5 +326,25 @@
     font-size: 1.5rem;
     max-width: 200px;
     word-wrap: break-word;
+  }
+}
+
+/* some fixes */
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .wrapper {
+    bottom: 0;
+  }
+
+  .menu-contact-wrapper {
+    gap: 2rem;
+  }
+
+  .mapa{
+    padding: 0 8rem;
+  }
+
+  .text-mapa {
+    padding: 0 8rem;
   }
 }
