@@ -144,13 +144,12 @@
     flex-direction: column;
     height: fit-content;
     justify-content: flex-start;
-    margin: 120px 0;
+    margin: 120px 0 20px 0;
     text-align: left;
   }
 
   .section-video {
     width: 100%;
-    margin-bottom: 2rem;
   }
 
   .section-video iframe {
@@ -167,16 +166,10 @@
   .menu-contact-wrapper {
     flex-direction: column;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 1rem;
-  }
-
-  .menu-contact-wrapper {
-    flex-direction: column;
-    justify-content: center;
     margin-top: 120px;
     padding: 0 1rem;
-    height: 70vh;
+    height: 68vh;
+    gap: 4rem;
   }
 
   .text-mapa {
@@ -188,13 +181,11 @@
   }
 
   /* documents */
-
   
-
   .documents-wrapper {
     padding: 0;
-    margin-top: 120px;
-    margin-bottom: 20px;
+    height: 100vh;
+    justify-content: center;
     padding-left: 2rem;
   }
 
@@ -228,19 +219,21 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   /* home */
+
   /* about us */
+
   .sobre-nos {
-    height: 100vh;
-    margin-bottom: 40px;
+    height: calc(100vh - 10px);
   }
   .section-wrapper {
-    margin: 120px 0;
-    height: fit-content;
-
+    margin: 120px 0 20px 0;
   }
+
   /* contact */
   
-
+  .menu-contact-wrapper {
+    gap: 1rem;
+  }
   .text-mapa {
     width: 100%;
   }
@@ -251,15 +244,20 @@
   }
 
   .text-mapa p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .text-mapa .ps {
     max-width: 100%;
   }
 
+  .ps {
+    margin: 0;
+    margin-top: 20px;
+  }
+
   .text-mapa .ps p {
-    font-size: 0.96rem;
+    font-size: 1.1rem;
     word-wrap: break-word;
   }
 
@@ -282,11 +280,16 @@
 
   .owl-stage {
     display: flex;
-    gap: 6.5rem;
+    gap: 2rem;
   }
 
+  .documents-wrapper {
+    margin-top: 120px;
+    height: unset;
+}
+
   .documents-wrapper h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .documents-wrapper .rules-wrapper p{
@@ -298,22 +301,19 @@
   }
 }
 
-@media (min-width: 505px) and (max-width: 1230px) {
-  .owl-stage {
-    display: flex;
-    gap: 2rem;
-  }
-}
 
-/* iphone 5 < */
-
-@media (max-width: 320px) {
+@media (max-width: 280px) {
   .owl-stage {
-    display: flex;
-    gap: 8rem;
+    gap: 6rem;
   }
 
-  .rules-wrapper h1 {
-    font-size: 3.2rem;
+  .documents-wrapper h1 {
+    font-size: 2.5rem;
+  }
+
+  .documents-wrapper p {
+    font-size: 1.5rem;
+    max-width: 200px;
+    word-wrap: break-word;
   }
 }

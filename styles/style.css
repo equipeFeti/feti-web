@@ -185,7 +185,7 @@ header {
   position: relative;
 }
 .main-img img {
-  width: 100%;
+  width: 85%;
   position: absolute;
   bottom: 0;
 }
@@ -245,6 +245,7 @@ width:85%;
   justify-content: space-around;
   align-items: center;
 
+  gap: 2rem;
   padding: 0rem 2rem ;
 }
 
@@ -399,7 +400,7 @@ width:85%;
   
   width: 150%;
 
-  padding: 4rem 20%;
+  padding: 3rem 20%;
   gap: 4rem;
 
   overflow-x: hidden;
