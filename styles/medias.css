@@ -13,7 +13,7 @@
     z-index: 10;
   }
 
-  .hamburguer-menu{
+  .hamburguer-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,6 @@
 
     z-index: 10;
   }
-
 
   .menu-wrapper ul {
     overflow: hidden;
@@ -45,22 +44,21 @@
     font-size: 4rem;
 
     background: var(--light-blue);
-    
+
     align-items: center;
     z-index: 1;
 
     margin-left: 100%;
-}
+  }
 
   .menu-wrapper ul a + a {
     margin: 0;
-    
   }
 
   .close-menu {
     animation-name: closeMenu;
-   animation-duration: 1s;
-   animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 
   @keyframes closeMenu {
@@ -72,22 +70,22 @@
       margin-left: 100%;
     }
   }
-  
+
   .show-menu {
-   animation-name: showMenu;
-   animation-duration: 1s;
-   animation-fill-mode: forwards;
+    animation-name: showMenu;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 
   @keyframes showMenu {
-    from{
-    margin-left: 100%;
-  }
+    from {
+      margin-left: 100%;
+    }
 
-  to{
+    to {
       margin-left: 0%;
-  } 
-}
+    }
+  }
 
 .logo-wrapper {
   display: flex;
@@ -96,9 +94,11 @@
   justify-content: center;
 }
 
-.main-wrapper {
-  height: 100vh;
-}
+  /* home  */
+
+  .main-wrapper {
+    height: 100vh;
+  }
 
 .main-text {
   display: flex;
@@ -130,6 +130,24 @@
 
   align-self: left;
 }
+  .main-img {
+    display: none;
+  }
+
+  .main-text h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .main-text h3 {
+    font-size: 3.4rem;
+  }
+
+  .main-text button {
+    width: 15rem;
+  }
 
 /* about us */
 
@@ -139,8 +157,8 @@
   justify-content: flex-start;
   margin-top: 8rem;
   text-align: left;
+  height: 100%;
 }
-
 .section-video {
   width: 100%;
   margin-bottom: 2rem;
@@ -153,7 +171,7 @@
   margin-top: 2rem;
 }
 .section-text h1{
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 /*contact page*/
@@ -162,7 +180,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 100px;
  }
 /* Documents page */
 
@@ -238,11 +256,80 @@
 }
 }
  /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width:1200px){ 
+@media (min-width: 992px) and (max-width:1199.98px){ 
   /*Home*/
   .main-img img{
     width: 70%;
   }
+
+  .section-text h1 {
+    font-size: 3rem;
+  }
+
+  /* contact */
+
+  .menu-contact-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 2rem;
+
+  }
+  /*about us*/
+  .section-video iframe {
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+  }
+  /* documents */
+
+  
+
+  .documents-wrapper {
+    padding: 0;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    padding-left: 2rem;
+  }
+
+  .owl-stage {
+    display: flex;
+    gap: 0rem;
+  }
+  .text-mapa p {
+    font-size: 1.5rem;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Home*/
+  .wrapper{
+    bottom: 18px;
+
+  }
+  /*about us*/
+ 
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  /* home */
+  /* about us */
+  .sobre-nos {
+    height: 100vh;
+    margin-bottom: 40px;
+  }
+  .section-wrapper {
+    margin: 120px 0 20px 0;
+  }
+  /* contact */
   
   .text-mapa h1{
     font-size: 3rem;
@@ -302,7 +389,7 @@
   font-size: 1.5rem;
 }
 .text-mapa h1{
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .mapa{
@@ -316,7 +403,71 @@
 
 @media (max-width: 575.98px) { 
   
+
+  .text-mapa {
+    width: 100%;
+  }
+
+  .text-mapa h1 {
+    font-size: 2rem;
+    line-height: 0.5rem;
+  }
+
+  .text-mapa p {
+    font-size: 1.2rem;
+  }
+
+  .text-mapa .ps {
+    max-width: 100%;
+  }
+
+  .text-mapa .ps p {
+    font-size: 0.96rem;
+    word-wrap: break-word;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
+  .social-media {
+    height: 12vh;
+    position: relative;
+  }
+
+  .wrapper {
+    padding: 0 1rem;
+    position: relative;
+    top: 25%;
+  }
+  
+  /* documents */
+
+  .owl-stage {
+    display: flex;
+    gap: 6.5rem;
+  }
+
+  .documents-wrapper h1{
+    font-size: 3.5rem;
+  }
+
+  .documents-wrapper .rules-wrapper p{
+    max-width: 45.5%;
+  }
+
+  .documents-wrapper .editais-wrapper p{
+    max-width: 45.5%;
+  }
 }
+
+@media (min-width: 505px) and (max-width: 1230px) {
+  .owl-stage {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
 /* iphone 5 < */
 @media (max-width: 320px) {
   .owl-stage {
