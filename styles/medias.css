@@ -5,7 +5,7 @@
   }
 
   .main-img img{
-    width: 65%;
+    width: 75%;
   }
 
   .main-text h1{
@@ -144,9 +144,6 @@
 
   align-self: left;
 }
-  .main-img {
-    display: none;
-  }
 
   .main-text h1 {
     width: 100%;
@@ -161,6 +158,18 @@
 
   .main-text button {
     width: 15rem;
+  }
+
+  .main-img {
+    flex: 1;
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: relative;
+  }
+  .main-img img {
+    max-width: 70%;
+    position: absolute;
+    bottom: 0;
   }
 
 /* about us */
@@ -257,6 +266,7 @@
 .documents-wrapper{
   justify-content: space-between;
   padding: 0 2rem;
+  margin-left: 0;
 }
 
 .document-box .document-description {
@@ -274,8 +284,16 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width:1199.98px){ 
   /*Home*/
-  .main-img img{
-    width: 70%;
+  .main-img {
+    flex: 1;
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: relative;
+  }
+  .main-img img {
+    max-width: 80%;
+    position: absolute;
+    bottom: 0;
   }
 
   .section-text h1 {
@@ -323,14 +341,16 @@
   
   /* Home*/
 
-  .main-img {
-    margin-top: 100px;
-  }
-
- .main-img img {
-  width: 85%;
-  position: absolute;
-  bottom: 0;
+.main-img {
+    flex: 1;
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: relative;
+ }
+.main-img img {
+    max-width: 82%;
+    position: absolute;
+    bottom: 0;
 }
 
  .main-text h3 {
@@ -441,6 +461,10 @@
 
   .documents-wrapper .editais-wrapper p{
     max-width: 45.5%;
+  }
+
+  .main-img {
+    display: none;
   }
 }
 

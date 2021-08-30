@@ -11,7 +11,7 @@ $('.owl-carousel').owlCarousel({
          
       },
       992:{
-          items: 9,
+          items: 12,
           
         },
       }

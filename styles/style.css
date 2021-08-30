@@ -181,11 +181,11 @@ header {
 .main-img {
   flex: 1;
   height: calc(100vh - 100px);
-  width: 50%;
+  width: 100%;
   position: relative;
 }
 .main-img img {
-  max-width: 70%;
+  max-width: 75%;
   position: absolute;
   bottom: 0;
 }
@@ -404,6 +404,7 @@ height: 100%;
   width: 150%;
 
   padding: 4rem 100px;
+  margin-left: 15%;
   margin-top: 40px;
   gap: 4rem;
 
