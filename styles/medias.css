@@ -5,7 +5,7 @@
   }
 
   .main-img img{
-    width: 75%;
+    width: 68%;
   }
 
   .main-text h1{
@@ -289,6 +289,7 @@
     height: calc(100vh - 100px);
     width: 100%;
     position: relative;
+   
   }
   .main-img img {
     max-width: 80%;
@@ -343,12 +344,12 @@
 
 .main-img {
     flex: 1;
-    height: calc(100vh - 100px);
+    height: calc(100vh);
     width: 100%;
     position: relative;
  }
 .main-img img {
-    max-width: 82%;
+    max-width: 100%;
     position: absolute;
     bottom: 0;
 }
