@@ -396,6 +396,11 @@ height: 100%;
   overflow-x: hidden;
 }
 
+.documents-page a {
+  width: 15rem;
+  height: 15rem;
+}
+
 .documents-wrapper{
   display: flex;
   flex-direction: column;
