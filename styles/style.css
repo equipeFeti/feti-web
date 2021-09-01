@@ -453,9 +453,9 @@ height: 100%;
   background: var(--yellow);
   color: var(--dark-blue);
 
-  width: 100%;
+  width: 110%;
 
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   text-align: center;
 
   position: relative;
