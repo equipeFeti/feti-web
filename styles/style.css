@@ -273,12 +273,14 @@ height: 100%;
   height: 100%;
   width: 100%;
 }
+
 .text-mapa h1 {
   font-size: 4rem;
+  width: 100%;
   color: var(--dark-blue);
-  line-height: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
+
 .text-mapa p{
   font-size: 1.5rem;
   color: var(--light-blue);
