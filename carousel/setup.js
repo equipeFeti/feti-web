@@ -6,14 +6,21 @@ $('.owl-carousel').owlCarousel({
       0:{
           items:3,
       },
+
+      320: {
+        items: 2
+      },
       540:{
           items: 5,
          
       },
       992:{
-          items: 12,
-          
+          items: 8,
         },
+
+      1380: {
+        items: 12
+      }
       }
   }
 )

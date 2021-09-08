@@ -22,6 +22,10 @@ a{
   text-decoration: none;
 
 }
+body {
+  font-family: Proxima Nova, sans-serif;
+}
+
 header {
   width: 100%;
 
@@ -215,7 +219,7 @@ header {
 .section-text h1{
   color: var(--dark-blue);
   font-weight: bold;
-  font-size: 80px;
+  font-size: 4rem;
 }
 .section-text p{
   width: 100%;
@@ -394,22 +398,21 @@ height: 100%;
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
 }
-.wrapper .tiktok:hover span,
-.wrapper .tiktok:hover .tooltip,
-.wrapper .tiktok:hover .tooltip:before{
-  background: #010101;
-}
 .wrapper .spotify:hover span,
 .wrapper .spotify:hover .tooltip,
 .wrapper .spotify:hover .tooltip:before{
-  background: #00D856;
+  background: #00d856;
 }
 .wrapper .linkedin:hover span,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip:before{
   background: #0074B4;
 }
-
+.wrapper .tiktok:hover span,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip:before{
+  background: #000000;
+}
 
 /* Editais/Regulamentos: Documents Page  */
 
@@ -435,6 +438,7 @@ height: 100%;
 
   overflow-x: hidden;
 }
+
 .editais-wrapper,
 .rules-wrapper 
 {
