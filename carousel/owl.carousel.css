@@ -51,10 +51,7 @@
    display: block;
    width: 100%;
  }
- .owl-carousel .owl-dots.disabled,
- .owl-carousel .owl-nav.disabled {
-   display: none;
- }
+ 
  .no-js .owl-carousel,
  .owl-carousel.owl-loaded {
    display: block;
@@ -62,7 +59,6 @@
  .owl-carousel .owl-dot,
  .owl-carousel .owl-nav .owl-next,
  .owl-carousel .owl-nav .owl-prev {
-   display: none;
    cursor: pointer;
    -webkit-user-select: none;
    -khtml-user-select: none;
@@ -73,7 +69,6 @@
  .owl-carousel .owl-nav button.owl-next,
  .owl-carousel .owl-nav button.owl-prev,
  .owl-carousel button.owl-dot {
-   background: 0 0;
    color: inherit;
    border: none;
    padding: 0 !important;

@@ -212,7 +212,7 @@ header {
 .section-text h1{
   color: var(--dark-blue);
   font-weight: bold;
-  font-size: 80px;
+  font-size: 4rem;
 }
 .section-text p{
   width: 100%;
