@@ -1,16 +1,9 @@
-@font-face {
-  font-family: Proxima Nova;
-  src: url(../documents/Fontes/ProximaNova-Regular.otf);
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: Proxima Nova Regular , sans-serif;
-}
+
 
 :root {
   --dark-blue: #272d5f;
@@ -22,6 +15,10 @@ a{
   text-decoration: none;
 
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   width: 100%;
 
@@ -394,22 +391,6 @@ height: 100%;
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
 }
-.wrapper .tiktok:hover span,
-.wrapper .tiktok:hover .tooltip,
-.wrapper .tiktok:hover .tooltip:before{
-  background: #010101;
-}
-.wrapper .spotify:hover span,
-.wrapper .spotify:hover .tooltip,
-.wrapper .spotify:hover .tooltip:before{
-  background: #00D856;
-}
-.wrapper .linkedin:hover span,
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip:before{
-  background: #0074B4;
-}
-
 
 /* Editais/Regulamentos: Documents Page  */
 
@@ -435,6 +416,7 @@ height: 100%;
 
   overflow-x: hidden;
 }
+
 .editais-wrapper,
 .rules-wrapper 
 {
