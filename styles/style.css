@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Proxima Nova;
+  font-family: "Proxima Nova";
   src: url(../documents/Fontes/ProximaNova-Regular.otf);
 }
 
@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: "Proxima Nova" , sans-serif;
+}
 
 :root {
   --dark-blue: #272d5f;
@@ -395,6 +397,21 @@ height: 100%;
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
+}
+.wrapper .spotify:hover span,
+.wrapper .spotify:hover .tooltip,
+.wrapper .spotify:hover .tooltip:before{
+  background: #00d856;
+}
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip:before{
+  background: #0074B4;
+}
+.wrapper .tiktok:hover span,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip:before{
+  background: #000000;
 }
 
 /* Editais/Regulamentos: Documents Page  */
