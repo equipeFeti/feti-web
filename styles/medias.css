@@ -585,6 +585,23 @@
   width: 70px;
 }
 @media(max-width:280px){
+
+/* home */
+
+  .main-wrapper {
+    padding: 0 1.5rem;
+  }
+
+  .main-wrapper h3 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  .main-wrapper button{
+    width: 14rem;
+  }
+
   .wrapper{
     bottom: -4px;
   }
