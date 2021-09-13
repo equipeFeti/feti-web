@@ -7,9 +7,6 @@
     bottom: 20px;
   }
 
-  .main-img img {
-    max-width: 58%;
-  }
 
   .main-text h1 {
     font-size: 8rem;
@@ -138,6 +135,10 @@
 
   /* home  */
 
+  .main-home {
+    background-image: url("../assets/menino-mb.png");
+  }
+
   .main-wrapper {
     height: calc(100vh - 100px);
     margin-top: 100px;
@@ -187,18 +188,6 @@
 
   .main-text button {
     width: 15rem;
-  }
-
-  .main-img {
-    flex: 1;
-    height: calc(100vh - 100px);
-    width: 100%;
-    position: relative;
-  }
-  .main-img img {
-    max-width: 70%;
-    position: absolute;
-    bottom: 0;
   }
 
   /* about us */
@@ -307,17 +296,6 @@
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) {
     /*Home*/
-    .main-img {
-      flex: 1;
-      height: calc(100vh - 100px);
-      width: 100%;
-      position: relative;
-    }
-    .main-img img {
-      max-width: 70%;
-      position: absolute;
-      bottom: 0;
-    }
 
     .section-text h1 {
       font-size: 3rem;
@@ -361,18 +339,6 @@
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) and (max-width: 991px) {
     /* Home*/
-
-    .main-img {
-      flex: 1;
-      height: calc(100vh - 100px);
-      width: 100%;
-      position: relative;
-    }
-    .main-img img {
-      max-width: 100%;
-      position: absolute;
-      bottom: 0;
-    }
 
     .main-text h3 {
       font-size: 5rem;
@@ -483,9 +449,7 @@
       max-width: 45.5%;
     }
 
-    .main-img {
-      display: none;
-    }
+    
   }
 
   /* some fixes */
