@@ -292,17 +292,6 @@
     margin-left: 0;
   }
 
-  .document-box .document-description {
-    width: 5rem;
-    height: 5rem;
-
-    display: flex;
-    justify-content: center;
-
-    position: relative;
-    top: -1rem;
-    right: -0.4rem;
-  }
 
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -485,6 +474,10 @@
 
     .main-img {
       display: none;
+    }
+
+    .documents-wrapper h2 {
+      font-size: 2rem;
     }
   }
 
