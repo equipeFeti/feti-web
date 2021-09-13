@@ -528,6 +528,11 @@
   .text-mapa h1{
     line-height: 2rem;
   }
+
+  .menu-contact {
+    overflow: hidden;
+  }
+
   .menu-contact-wrapper{
     height: 75vh;
   }
