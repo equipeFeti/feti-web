@@ -375,6 +375,12 @@
   }
 
   @media (max-width: 767.98px) {
+    .background-contact{
+      background: none;
+    }
+    .background-sobre{
+      background: none;
+    }
     .menu-contact-wrapper {
       gap: 1rem;
       height: 75vh;

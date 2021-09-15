@@ -189,6 +189,8 @@ header {
   background-image:url("../assets/menino.png");
   background-size:cover;
   background-repeat: no-repeat;
+  
+  
 }
 .section-wrapper{
   width:100%;
@@ -200,9 +202,18 @@ header {
   align-items: center;
   flex-direction: row;
 }
+.background-sobre{
+  background-image:url("../assets/fundo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+  object-fit: contain;
+  height: calc(100vh - 100px);
+
+}
 .section-text{
   flex: 1;
-  display: flex;
+  diseplay: flex;
   align-items: left;
   justify-content: center;
   flex-direction: column; 
@@ -255,7 +266,14 @@ height: 100%;
   gap: 2rem;
   padding: 0rem 2rem ;
 }
-
+.background-contact{
+  background-image:url("../assets/fundo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+  object-fit: contain;
+  height: calc(100vh - 100px);
+}
 .text-mapa {
  display: flex;
  flex-direction: column;
