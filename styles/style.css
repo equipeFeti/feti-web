@@ -38,7 +38,6 @@ header {
 
 .btn {
   width: 40%;
-  margin-left: 1rem;
   height: 2rem;
 
   color: var(--dark-blue);
@@ -213,7 +212,7 @@ header {
 }
 .section-text{
   flex: 1;
-  diseplay: flex;
+  display: flex;
   align-items: left;
   justify-content: center;
   flex-direction: column; 
@@ -225,12 +224,35 @@ header {
   font-weight: bold;
   font-size: 4rem;
 }
-.section-text p{
+.section-text #aboutText{
   width: 100%;
   color: var(--dark-blue);
   font-size: 1.5rem;
   text-align: justify;
-  
+  max-height: 25vh;
+  overflow-y: scroll;
+}
+
+.see-more {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 2rem 0rem;
+}
+
+.see-more p {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+}
+
+.see-more button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.aboutTextMore article + article {
+  margin-top: 2rem;
 }
 
 .section-wrapper {
@@ -244,7 +266,7 @@ header {
   justify-content: center;
   height: 40%;
   width: 50%;
-  box-shadow: 60px 40px 0px var(--dark-blue);
+  box-shadow: 40px 40px 0px var(--dark-blue);
 }
 
 .section-video iframe{
