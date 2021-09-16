@@ -15,7 +15,7 @@
   />
   <!--CAROUSEL-->
   <link rel="stylesheet" href="carousel/owl.carousel.css">
-  <link rel="stylesheet" href="carousel/owl.theme.default.css">
+  <link rel="stylesheet" href="carousel/owl.theme.default.min.css">
   <script
       src="https://kit.fontawesome.com/710ee36645.js"
       crossorigin="anonymous"
@@ -23,7 +23,10 @@
     <title>Feti</title>
 </head>
 <body id="body">
-
+  <div class="loading" style="display: none;">
+    <img src="./assets/logo.png" alt="carregando...">
+  </div>
+  <div class="content"style="visibility: hidden">
   <header>
     <div class="header-wrapper">
       <div class="logo-wrapper">
@@ -49,8 +52,8 @@
         <div class=" rules-wrapper">
           <h1>Legislação</h1>
           <p>A regulamentação oficial da FETI</p>
-          <h2>Legislação municipal</h2>
-        <div class="owl-carousel">
+        <h2>Legislação municipal</h2>
+        <div class="owl-carousel owl-theme">
           <a target="blank" href="./documents/leis/DECRETO N 245, DE 12 DE FEVEREIRO DE 2021.pdf">
             <div class="document-box">
               <div class="document-title">
@@ -271,8 +274,9 @@
             </div>
           </a>
     </div>
+    
     <h2>Estatutos e Regimentos</h2>
-    <div class="owl-carousel">
+    <div class="owl-carousel owl-theme">
       <a target="blank"  href="./documents/leis/Lei_2140 - Estatuto dos Servidores Públicos do Município.pdf">
         <div class="document-box">
           <div class="document-title">
@@ -317,7 +321,7 @@
     </div>
 
     <h2>Leis</h2>
-    <div class="owl-carousel">
+    <div class="owl-carousel owl-theme">
       <a target="blank"  href="./documents/leis/Lei Ordinária 13044 2019 de Uberaba MG.pdf">
         <div class="document-box">
           <div class="document-title">
@@ -374,9 +378,10 @@
         </div>
       </div>
   </main>
-  <script src="./carousel/jquery.min.js"></script>
-  <script src="./carousel/owl.carousel.js"></script>
-  <script src="./carousel/setup.js"></script>
   <script src="script.js"></script>
+  <script src="./carousel/jquery.min.js"></script>
+  <script src="./carousel/owl.carousel.min.js"></script>
+  <script src="./carousel/setup.js"></script>
+ </div>
 </body>
 </html>

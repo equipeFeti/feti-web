@@ -260,7 +260,7 @@
 
   .owl-stage {
     display: flex;
-    gap: 2rem;
+    gap: 0rem;
   }
 
   .document-box {
@@ -333,15 +333,13 @@
     .documents-wrapper {
       padding: 0;
       justify-content: center;
-      padding: 4rem 100px;
+      padding: 4rem 0px 0px 150px;
+      width: 100%;
       margin-top: 40px;
       gap: 2rem;
     }
 
-    .owl-stage {
-      display: flex;
-      gap: 2rem;
-    }
+    
     .text-mapa p {
       font-size: 1.5rem;
     }
@@ -446,7 +444,7 @@
 
     .owl-stage {
       display: flex;
-      gap: 2rem;
+      gap: 0.2rem;
     }
 
     .documents-wrapper {
@@ -580,6 +578,7 @@
 .section-text #aboutText{
   max-height: 50vh;
 }
+
 @media(max-width:280px){
 
 /* home */
