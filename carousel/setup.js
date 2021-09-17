@@ -3,22 +3,18 @@ $('.owl-carousel').owlCarousel({
   margin: 0,
   nav: true,
   autoWidth: true,
+  mouseDrag: true,
   dotsContainer: '#carousel-custom-dots',
   
   responsive:{
       0:{
-          items:0,
+          items: 1,
+          margin: 20
       },
 
-      320: {
-        items: 1,
-        margin: 100
-      },
       540:{
           items: 1,
-          margin: 100
-          
-         
+          margin: 50
       },
       992:{
           items: 8,
