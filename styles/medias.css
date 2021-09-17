@@ -44,7 +44,7 @@
 }
 /* generic */
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
   /* Home*/
   header {
     position: fixed;
@@ -610,4 +610,25 @@
   }
 
 }
+}
+@media (min-height: 700px) {
+  .text-mapa h1  {
+    font-size: 2rem;
+    margin-bottom: 0;
+
+  }
+  .wrapper .icon span{
+    width: 40px;
+    height: 40px;
+  }
+  .wrapper .icon span i{
+    line-height: 45px;
+    font-size: 20px;
+  }
+  .wrapper{
+    bottom: 20px;
+  }
+  .menu-contact-wrapper{
+    height: 100vh;
+  }
 }
