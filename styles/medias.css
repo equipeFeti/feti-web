@@ -62,6 +62,10 @@
     z-index: 10;
   }
 
+  .hamburguer-menu span {
+    display: block;
+  }
+
   .menu-wrapper ul {
     overflow: hidden;
 
@@ -83,10 +87,15 @@
     z-index: 1;
 
     margin-left: 100%;
+
   }
 
   .menu-wrapper ul a + a {
     margin: 0;
+  }
+
+  .menu-wrapper ul li {
+    font-size: 2.3rem;
   }
 
   .close-menu {
