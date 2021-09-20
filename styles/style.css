@@ -129,6 +129,19 @@ header {
 
 .hamburguer-menu{
   display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburguer-menu span {
+  width: 20px;
+  height: 2px;
+  background: white;
+  display: none;
+
+  transition: all 0.5s;
+  position: relative;
 }
 
 .logo-wrapper {
