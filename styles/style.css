@@ -22,10 +22,6 @@ a{
   text-decoration: none;
 
 }
-body {
-  font-family: Proxima Nova, sans-serif;
-}
-
 .loading img{
   width: 200px;
   max-width: 100vw;
@@ -91,8 +87,8 @@ header {
 }
 
 .btn {
-  width: 40%;
-  height: 2rem;
+  width: 26%;
+  height: 2.2rem;
 
   color: var(--dark-blue);
   background: var(--yellow);
@@ -280,10 +276,10 @@ header {
 }
 .section-text #aboutText{
   width: 100%;
-  color: var(--dark-blue);
+  color: var(--light-blue);
   font-size: 1.5rem;
   text-align: justify;
-  max-height: 25vh;
+  max-height: 30vh;
   overflow-y: scroll;
 }
 
@@ -297,7 +293,7 @@ header {
 
 .see-more p {
   font-size: 1.5rem;
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 .see-more button {
@@ -364,6 +360,7 @@ height: 100%;
 }
 .mapa h1{
   font-size: 4rem;
+  margin-bottom: 2rem;
   color: var(--dark-blue);
 
 }
@@ -428,7 +425,7 @@ height: 100%;
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon span i{
@@ -447,7 +444,7 @@ height: 100%;
   border-radius: 25px;
   opacity: 0;
   pointer-events: none;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon:hover .tooltip{
