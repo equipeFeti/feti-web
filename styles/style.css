@@ -87,7 +87,7 @@ header {
 }
 
 .btn {
-  width: 26%;
+  width: 30%;
   height: 2.2rem;
 
   color: var(--dark-blue);
@@ -292,7 +292,7 @@ header {
   color: var(--light-blue);
   font-size: 1.5rem;
   text-align: justify;
-  max-height: 30vh;
+  max-height: 40vh;
   overflow-y: scroll;
 }
 

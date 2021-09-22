@@ -24,7 +24,10 @@
   .section-text h1 {
     font-size: 3rem;
   }
-
+  .section-text #aboutText
+  {
+    max-height: 50vh;
+  }
   .section-text p {
     font-size: 1.2rem;
   }
@@ -208,7 +211,6 @@
 
   .section-video {
     box-shadow: none;
-    display: block;
     
     margin: 4rem 0rem;
   }
@@ -469,14 +471,6 @@
       font-size: 3rem;
     }
 
-    .documents-wrapper .rules-wrapper p {
-      max-width: 45.5%;
-    }
-
-    .documents-wrapper .editais-wrapper p {
-      max-width: 45.5%;
-    }
-
     .main-img {
       display: none;
     }
@@ -587,9 +581,11 @@
 #logo{
   width: 70px;
 }
-
+.btn{
+  width: 40%;
+}
 .section-text #aboutText{
-  max-height: 50vh;
+  max-height: 63vh;
 }
 
 .owl-theme .owl-nav {
