@@ -20,6 +20,12 @@ body{
 }
 a{
   text-decoration: none;
+}
+.btn-main a{
+  text-decoration: none;
+  color: var(--dark-blue);
+
+  font-size: 1.6rem;
 
 }
 .loading img{
