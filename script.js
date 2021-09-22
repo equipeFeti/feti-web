@@ -13,78 +13,13 @@ controler = 1;
 
 /* Responsive Menu */
 
-hambButton.addEventListener("click", () => {
-  const menuClassActive = menu.classList[1];
-
-  switch (menuClassActive) {
-    case undefined:
-      console.log("to no undefined ")
-      menu.classList.add("show-menu");
-
-      hambButton.style.gap = "0";
-      menuLines[0].style.top = "3.5px";
-      menuLines[0].style.transform = "rotate(125deg)";
-      menuLines[2].style.transform = "rotate(55deg)";
-      menuLines[1].style.transform = "TranslateX(100px)";
-      break;
-
-    case "show-menu":
-      // fechar menu
-      if (controler == 1) {
-        console.log("to no show-menu controler 1 ")
-        menu.classList.add("close-menu");
-        menu.classList.remove('show-menu');
-        
-
-    
-        hambButton.style.gap = "5px";
-        menuLines[0].style.top = "-1px";
-        menuLines[0].style.transform = "rotate(0deg)";
-        menuLines[2].style.transform = "rotate(0deg)";
-        menuLines[1].style.transform = "rotate(0deg)";
-        
-        controler = 2
-      } else {
-        menu.classList.remove("show-menu");
-        menu.classList.add("close-menu");
-  
-        hambButton.style.gap = "5px";
-        menuLines[0].style.top = "-1px";
-        menuLines[0].style.transform = "rotate(0deg)";
-        menuLines[2].style.transform = "rotate(0deg)";
-        menuLines[1].style.transform = "TranslateX(0px)";
-        console.log("to no show-menu else")
-      }
-  break;
-
-    case "close-menu":
-
-      if (controler == 2) {
-        console.log("to no close-menu controler 2 ")
-        hambButton.style.gap = "0px";
-        menuLines[0].style.top = "3.5px";
-        menuLines[0].style.transform = "rotate(125deg)";
-        menuLines[2].style.transform = "rotate(55deg)";
-        menuLines[1].style.transform = "TranslateX(100px)"
-        
-        menu.classList.remove('close-menu')
-        menu.classList.add('show-menu')
-      }  else {
-        console.log("to no sclose-menu else")
-        menu.classList.remove("close-menu");
-        menu.classList.add("show-menu");
-  
-        hambButton.style.gap = "5px";
-        menuLines[0].style.top = "-1px";
-        menuLines[0].style.transform = "rotate(0deg)";
-        menuLines[2].style.transform = "rotate(0deg)";
-        menuLines[1].style.transform = "TranslateX(100px)"
-      }
-      break;
-  }
-});
-
-
+hambButton.addEventListener('click', () => {
+  menu.classList.toggle('show');
+  hambButton.classList.toggle('rotate')
+  menuLines[0].classList.toggle('rotate0')
+  menuLines[1].classList.toggle('rotate1')
+  menuLines[2].classList.toggle('rotate2')
+})
 
 /* Tela de loading */
 
