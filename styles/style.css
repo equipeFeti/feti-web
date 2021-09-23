@@ -27,6 +27,13 @@ body{
 a{
   text-decoration: none;
 }
+.btn-main a{
+  text-decoration: none;
+  color: var(--dark-blue);
+
+  font-size: 1.6rem;
+
+}
 
 .loading img{
   width: 200px;
@@ -93,7 +100,7 @@ header {
 }
 
 .btn {
-  width: 26%;
+  width: 30%;
   height: 2.2rem;
 
   color: var(--dark-blue);
@@ -366,7 +373,7 @@ header {
   color: var(--light-blue);
   font-size: 1.5rem;
   text-align: justify;
-  max-height: 30vh;
+  max-height: 40vh;
   overflow-y: scroll;
 }
 
@@ -385,7 +392,9 @@ header {
 
 .see-more button {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+
 }
 
 .aboutTextMore article + article {
@@ -401,7 +410,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40%;
+  height: 50%;
   width: 50%;
   box-shadow: 40px 40px 0px var(--dark-blue);
 }
@@ -435,9 +444,6 @@ height: 100%;
  flex-direction: column;
  justify-content: center;
 }
-.text-mapa h3{
-  color: #272d5f;
-}
 .mapa{
   height: 40%;
   width: 50%;
@@ -467,7 +473,13 @@ height: 100%;
 .ps{
   margin-top: 2rem;
 }
-
+.ps p a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+.ps p a:hover{
+ color: var(--yellow);
+}
 
 .wrapper{
   display: flex;
@@ -651,9 +663,10 @@ height: 100%;
   padding: 1rem;
   margin-top: 2rem;
 
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   
   background: var(--light-blue);
+
 }
 
 .document-title {

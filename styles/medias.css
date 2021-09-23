@@ -24,7 +24,10 @@
   .section-text h1 {
     font-size: 3rem;
   }
-
+  .section-text #aboutText
+  {
+    max-height: 50vh;
+  }
   .section-text p {
     font-size: 1.2rem;
   }
@@ -32,9 +35,8 @@
   .section-text button {
     width: 8rem;
   }
-
-  .section-video {
-    height: 50%;
+  .wrapper{
+    bottom: 60px;
   }
 }
 /* generic */
@@ -240,7 +242,6 @@
 
   .section-video {
     box-shadow: none;
-    display: block;
     
     margin: 4rem 0rem;
   }
@@ -291,6 +292,7 @@
     gap: 2rem;
     margin-top: 100px;
   }
+  
   /* Documents page */
 
   .owl-carousel {
@@ -357,7 +359,9 @@
     }
 
     /* contact */
-
+    .wrapper{
+      bottom: 50px;
+    }
     .menu-contact-wrapper {
       flex-direction: row;
       justify-content: center;
@@ -372,7 +376,9 @@
       height: 35vh;
       width: 90%;
     }
-
+  
+    /*contact*/
+    
     /* documents */
 
     .documents-wrapper {
@@ -425,7 +431,7 @@
     }
 
     .wrapper {
-      bottom: 40px;
+      bottom: 20px;
     }
     /* document page */
 
@@ -482,7 +488,7 @@
 
     .wrapper {
       position: relative;
-      bottom: 40px;
+      bottom: 20px;
     }
 
     /* documents */
@@ -499,14 +505,6 @@
 
     .documents-wrapper h1 {
       font-size: 3rem;
-    }
-
-    .documents-wrapper .rules-wrapper p {
-      max-width: 45.5%;
-    }
-
-    .documents-wrapper .editais-wrapper p {
-      max-width: 45.5%;
     }
 
     .main-img {
@@ -619,9 +617,11 @@
 #logo{
   width: 70px;
 }
-
+.btn{
+  width: 40%;
+}
 .section-text #aboutText{
-  max-height: 50vh;
+  max-height: 63vh;
 }
 
 .owl-theme .owl-nav {
