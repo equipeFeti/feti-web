@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/medias.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="./carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="carousel/owl.theme.default.min.css" />
     <link href="assets/logo.png" rel="icon" />
     <script
       src="https://kit.fontawesome.com/710ee36645.js"
@@ -20,18 +17,18 @@
   </head>
   <body>
     <div class="loading">
-      <img src="./assets/logo.png" alt="carregando...">
+      <img src="./assets/logo.png" alt="carregando..." />
     </div>
-    <div class="content"style="visibility: hidden">
+    <div class="content" style="visibility: hidden">
       <header>
         <div class="header-wrapper">
           <div class="logo-wrapper">
             <img src="./assets/logo.png" alt="feti" id="logo" />
           </div>
           <div class="hamburguer-menu">
-           <span class="hamb-lines"></span>
-           <span class="hamb-lines"></span>
-           <span class="hamb-lines"></span>
+            <span class="hamb-lines"></span>
+            <span class="hamb-lines"></span>
+            <span class="hamb-lines"></span>
           </div>
           <div class="menu-wrapper">
             <ul class="menu-wrapper-ul">
@@ -46,15 +43,65 @@
       </header>
       <main class="main-home">
         <div class="main-wrapper">
+         
           <div class="main-text">
             <h1>feti</h1>
             <h3>Inicie sua carreira.</h3>
             <button><a href="sobreNos.html">Saiba mais</a></button>
           </div>
+
+          <div class="main-img">
+            <img src="./assets/student.png" alt="">
+          </div>
         </div>
       </main>
-      
-      <script src="script.js"></script>
-    </body>
+      <section class="instagram-section">
+        <div class="instagram-text">
+            <h1><a target="blank" href="https://www.instagram.com/fetiuberaba/">@fetiuberaba</a></h1>
+            <p>Nos siga no instagram e fique por dentro das últimas notícias.</p>
+        </div> 
+        <div id="instafeed" class="owl-carousel owl-theme instagram-carousel"></div>
+        
     </div>
+
+    <script src="./carousel/jquery.min.js"></script>
+    <script src="./carousel/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="./node_modules/instafeed.js/dist/instafeed.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        accessToken:
+          "IGQVJWNTFRaTVJUk9adUxSWmJwSGRheHdfOVJHV3FvOGVWSFFLRjctYS1ZAeUw4S2RxUUVVbEZAqdl8ta2NMOURIMk80akxiZA2VfUFJNSWhub0pqdHRqRXFoaHUxbEdxU3VQc0p2ZATNoUUZAlaUtJUmtFSAZDZD",
+        template:
+          '<div class="instagram-image"><a target="blank" href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a> </div>',
+        after: function () {
+          $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+              loop: false,
+              margin: 20,
+              nav: true,
+              mouseDrag: true,
+              dotsContainer: "#carousel-custom-dots",
+              
+              responsive: {
+                0: {
+                  items: 1
+                },
+
+                600: {
+                  items: 3
+                }
+              }
+  
+            });
+          });
+        },
+      });
+      feed.run();
+    </script>
+  </body>
 </html>

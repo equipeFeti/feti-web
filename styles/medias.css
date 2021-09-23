@@ -198,6 +198,34 @@
     width: 15rem;
   }
 
+  .instagram-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .instagram-carousel {
+    max-width: 90%;
+  }
+
+  .instagram-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .instagram-text h1{
+    font-size: 2rem;
+  }
+
+  .instagram-text p {
+    font-size: 1.2rem;
+  }
+
   /* about us */
 
   .section-wrapper {
