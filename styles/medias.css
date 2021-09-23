@@ -159,6 +159,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 1rem;
   }
   .main-text h1 {
     width: 100%;
@@ -169,6 +170,7 @@
 
   .main-text h3 {
     font-size: 3.4rem;
+    max-width: 20rem;
   }
 
   .main-text button {
@@ -200,6 +202,10 @@
     width: 15rem;
   }
 
+  .main-img{
+    display: none;
+  }
+
   .instagram-section {
     flex-direction: column;
     justify-content: center;
@@ -226,6 +232,22 @@
 
   .instagram-text p {
     font-size: 1.2rem;
+  }
+
+  .main-wrapper {
+    justify-content: space-between;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    overflow: hidden;
+    font-size: 1rem;
   }
 
   /* about us */
