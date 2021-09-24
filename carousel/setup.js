@@ -16,10 +16,6 @@ $('.owl-carousel').owlCarousel({
           items: 1,
           margin: 50
       },
-      992:{
-          items: 8,
-          margin: 100,
-        },
 
       1380: {
         items: 6,
