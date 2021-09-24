@@ -698,9 +698,9 @@
 
 }
 
-@media (max-width: 992px) and (orientation: landscape) {
+@media only screen and (max-height: 500px) and (orientation: landscape) {
   .text-mapa h1{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var (--dark-blue);
     margin-bottom: 1rem;
   }
@@ -709,6 +709,7 @@
   }
   .wrapper{
     bottom: 10px;
+    position: relative;
   }
   .mapa{
     margin-top: 1rem;
