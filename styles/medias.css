@@ -1,5 +1,19 @@
+@media (min-width: 1921px) {
+  .background-contact {
+    background: none;
+  }
+
+  .background-sobre {
+    background: none;
+  }
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1366px) {
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .main-img img {
+    width: 550px;
+  }
+
   .mapa {
     width: 40%;
   }
@@ -15,7 +29,6 @@
 
   .main-text button {
     width: 18rem;
-
     margin-top: 2rem;
   }
 
@@ -146,10 +159,6 @@
 
   /* home  */
 
-  .main-home {
-    background-image: url("../assets/menino-mb.png");
-  }
-
   .main-wrapper {
     height: calc(100vh - 100px);
     margin-top: 100px;
@@ -171,7 +180,7 @@
 
   .main-text h3 {
     font-size: 3.4rem;
-    max-width: 20rem;
+    max-width: 30rem;
   }
 
   .main-text button {
@@ -313,6 +322,10 @@
     margin-top: 100px;
   }
   
+
+  .wrapper{
+    bottom: 20px;
+  }
   /* Documents page */
 
   .owl-carousel {
@@ -380,7 +393,7 @@
 
     /* contact */
     .wrapper{
-      bottom: 50px;
+      bottom: 20px;
     }
     .menu-contact-wrapper {
       flex-direction: row;
@@ -558,7 +571,12 @@
 }
 
 @media (max-width: 575.98px) {
-  
+    /* Home */
+
+  .main-text h3 {
+    max-width: 20rem;
+  }
+
   /* about us */
   
   .menu-contact-wrapper {
@@ -596,6 +614,7 @@
  /* extra small devices */
 
  @media (max-width: 320px) {
+
 
   .documents-wrapper h1 {
     font-size: 2.5rem;
@@ -675,7 +694,7 @@
 
 }
 
-@media (max-width: 700px) and (orientation: landscape) {
+@media (max-width: 992px) and (orientation: landscape) {
   .text-mapa h1{
     font-size: 1.5rem;
     color: var (--dark-blue);
