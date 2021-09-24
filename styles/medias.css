@@ -9,7 +9,7 @@
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1025px) and (max-width: 1366px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
   .main-img img {
     width: 550px;
   }
@@ -267,26 +267,19 @@
     margin-top: 120px;
     text-align: left;
     padding: 0;
-
-    height: inherit;
-  
   }
 
   .section-video {
     box-shadow: none;
-    height: 100%;
+    overflow: hidden;
   }
-
-
   .background-contact{
     background: none;
   }
-  .background-sobre{
-    background: none;
-  }
+
   .section-video iframe {
     display: block;
-    height: 50vh;
+    height: 35vh;
    
   }
 
@@ -422,7 +415,11 @@
       gap: 2rem;
     }
 
-    
+    /* Sobre nos */
+
+    .background-contact{
+      height: calc(200vh);
+    }
     .text-mapa p {
       font-size: 1.5rem;
     }

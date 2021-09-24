@@ -455,7 +455,7 @@ height: 100%;
 .background-contact{
   background-image:url("../assets/fundo.png");
   background-repeat: no-repeat;
-  height: calc(100vh - 100px);
+  
 }
 .text-mapa {
  display: flex;
