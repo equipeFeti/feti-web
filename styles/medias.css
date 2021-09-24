@@ -53,6 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 2rem;
 
     position: fixed;
     right: 4rem;
@@ -159,6 +160,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 1rem;
   }
   .main-text h1 {
     width: 100%;
@@ -169,6 +171,7 @@
 
   .main-text h3 {
     font-size: 3.4rem;
+    max-width: 20rem;
   }
 
   .main-text button {
@@ -200,6 +203,10 @@
     width: 15rem;
   }
 
+  .main-img{
+    display: none;
+  }
+
   .instagram-section {
     flex-direction: column;
     justify-content: center;
@@ -228,26 +235,39 @@
     font-size: 1.2rem;
   }
 
+  .main-wrapper {
+    justify-content: space-between;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    overflow: hidden;
+    font-size: 1rem;
+  }
+
   /* about us */
 
   .section-wrapper {
     flex-direction: column;
-    gap: 0rem;
-    align-items: space-between;
-    margin-top: 100px;
+
+    margin-top: 120px;
     text-align: left;
     padding: 0;
+  
   }
 
   .section-video {
     box-shadow: none;
-    
-    margin: 4rem 0rem;
+    height: 100%;
   }
 
-  .background-sobre {
-    background-image: none;
-  }
+
   .background-contact{
     background: none;
   }
@@ -255,13 +275,14 @@
     background: none;
   }
   .section-video iframe {
-    width: 100%;
-    height: 40vh;
+    display: block;
+    height: 50vh;
+   
   }
 
   .section-text {
     padding: 0 2rem;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .section-text h1 {
