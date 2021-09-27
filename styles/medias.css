@@ -37,8 +37,7 @@
   .section-text h1 {
     font-size: 3rem;
   }
-  .section-text #aboutText
-  {
+  .section-text #aboutText {
     max-height: 50vh;
   }
   .section-text p {
@@ -48,13 +47,13 @@
   .section-text button {
     width: 8rem;
   }
-  .wrapper{
+  .wrapper {
     bottom: 60px;
   }
 }
 /* generic */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   /* Home*/
   header {
     position: fixed;
@@ -108,39 +107,39 @@
   }
 
   .menu-wrapper ul.show {
-      left: 0%;
-    }
-  
-   .hamburguer-menu {
-      gap: 5px;
-      transition: all 1s;
-      right: 4rem;
-    }
-  
-    .hamburguer-menu.rotate {
-      gap: 0px;
-      right: calc(90vw);
-    }
-  
-    .hamburguer-menu span {
-      transform: rotate(0deg);
-    }
-  
-    .hamburguer-menu span.rotate0 {
-      transform: rotate(-40deg);
-      width: 15px;
-    }
-    .hamburguer-menu span.rotate1 {
-      transform: translateX(6px);
-      top: 1.5px;
-    }
-    .hamburguer-menu span.rotate2 {
-      transform: rotate(40deg);
-      position: absolute;
-  
-      top: 8.2px;
-      width: 15px;
-    }
+    left: 0%;
+  }
+
+  .hamburguer-menu {
+    gap: 5px;
+    transition: all 1s;
+    right: 4rem;
+  }
+
+  .hamburguer-menu.rotate {
+    gap: 0px;
+    right: calc(90vw);
+  }
+
+  .hamburguer-menu span {
+    transform: rotate(0deg);
+  }
+
+  .hamburguer-menu span.rotate0 {
+    transform: rotate(-40deg);
+    width: 15px;
+  }
+  .hamburguer-menu span.rotate1 {
+    transform: translateX(6px);
+    top: 1.5px;
+  }
+  .hamburguer-menu span.rotate2 {
+    transform: rotate(40deg);
+    position: absolute;
+
+    top: 8.2px;
+    width: 15px;
+  }
 
   .menu-wrapper ul a + a {
     margin: 0;
@@ -212,7 +211,7 @@
     width: 15rem;
   }
 
-  .main-img{
+  .main-img {
     display: none;
   }
 
@@ -236,7 +235,7 @@
     padding-left: 1rem;
   }
 
-  .instagram-text h1{
+  .instagram-text h1 {
     font-size: 2rem;
   }
 
@@ -270,7 +269,6 @@
     padding: 0;
 
     height: inherit;
-  
   }
 
   .section-video {
@@ -278,17 +276,15 @@
     height: 100%;
   }
 
-
-  .background-contact{
+  .background-contact {
     background: none;
   }
-  .background-sobre{
+  .background-sobre {
     background: none;
   }
   .section-video iframe {
     display: block;
     height: 50vh;
-   
   }
 
   .section-text {
@@ -300,12 +296,12 @@
     font-size: 3rem;
   }
 
-  .section-text p{
+  .section-text p {
     font-size: 1.1rem;
     max-height: 80vh;
   }
 
-  .section-text #aboutText{
+  .section-text #aboutText {
     width: 100%;
     color: var(--light-blue);
     font-size: 1.2rem;
@@ -313,7 +309,6 @@
     max-height: 45vh;
     overflow-y: scroll;
   }
-  
 
   /*contact page*/
   .menu-contact-wrapper {
@@ -323,9 +318,8 @@
     gap: 2rem;
     margin-top: 100px;
   }
-  
 
-  .wrapper{
+  .wrapper {
     bottom: 20px;
   }
   /* Documents page */
@@ -384,7 +378,6 @@
     width: 100%;
   }
 
-
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) {
     /*Home*/
@@ -394,7 +387,7 @@
     }
 
     /* contact */
-    .wrapper{
+    .wrapper {
       bottom: 20px;
     }
     .menu-contact-wrapper {
@@ -409,9 +402,9 @@
       margin-top: 2rem;
       justify-content: center;
     }
-  
+
     /*contact*/
-    
+
     /* documents */
 
     .documents-wrapper {
@@ -423,7 +416,6 @@
       gap: 2rem;
     }
 
-    
     .text-mapa p {
       font-size: 1.5rem;
     }
@@ -474,10 +466,10 @@
   }
 
   @media (max-width: 767.98px) {
-    .background-contact{
+    .background-contact {
       background: none;
     }
-    .background-sobre{
+    .background-sobre {
       background: none;
     }
     .menu-contact-wrapper {
@@ -571,14 +563,16 @@
 }
 
 @media (max-width: 575.98px) {
-    /* Home */
-
+  /* Home */
+  .logo-feti {
+    width: 250px;
+  }
   .main-text h3 {
-    max-width: 20rem;
+    max-width: 15rem;
   }
 
   /* about us */
-  .see-more button{
+  .see-more button {
     font-size: 1rem;
     font-weight: 100;
   }
@@ -587,11 +581,11 @@
     margin-top: 100px;
     height: 70vh;
   }
-  .wrapper .icon span{
+  .wrapper .icon span {
     width: 40px;
     height: 40px;
   }
-  .wrapper .icon span i{
+  .wrapper .icon span i {
     line-height: 45px;
     font-size: 20px;
   }
@@ -614,11 +608,9 @@
     width: 90%;
   }
 }
- /* extra small devices */
+/* extra small devices */
 
- @media (max-width: 320px) {
-
-
+@media (max-width: 320px) {
   .documents-wrapper h1 {
     font-size: 2.5rem;
   }
@@ -628,7 +620,7 @@
     max-width: 200px;
     word-wrap: break-word;
   }
-  .text-mapa h1{
+  .text-mapa h1 {
     line-height: 2rem;
     font-size: 1.6rem;
     margin-bottom: 0;
@@ -638,42 +630,39 @@
     overflow: hidden;
   }
 
-  .menu-contact-wrapper{
+  .menu-contact-wrapper {
     height: calc(70vh - 30px);
-    
   }
-  .wrapper{
+  .wrapper {
     bottom: 50px;
   }
-  .header-wrapper{
+  .header-wrapper {
     height: 80px;
-
   }
-  .logo-wrapper{
+  .logo-wrapper {
     width: 100px;
-    height:81px;
-}
-.menu-contact-wrapper{
-  margin: 80 0px;
-}
+    height: 81px;
+  }
+  .menu-contact-wrapper {
+    margin: 80 0px;
+  }
 
-#logo{
-  width: 70px;
-}
-.btn{
-  width: 40%;
-}
-.section-text #aboutText{
-  max-height: 63vh;
-}
+  #logo {
+    width: 70px;
+  }
+  .btn {
+    width: 40%;
+  }
+  .section-text #aboutText {
+    max-height: 63vh;
+  }
 
-.owl-theme .owl-nav {
-  width: 95%;
+  .owl-theme .owl-nav {
+    width: 95%;
+  }
 }
-}
-@media(max-width:280px){
-
-/* home */
+@media (max-width: 280px) {
+  /* home */
 
   .main-wrapper {
     padding: 0 1.5rem;
@@ -685,44 +674,43 @@
     line-height: 2.5rem;
   }
 
-  .main-wrapper button{
+  .main-wrapper button {
     width: 14rem;
   }
 
-  .wrapper{
+  .wrapper {
     bottom: -4px;
   }
-  .menu-contact-wrapper{
+  .menu-contact-wrapper {
     height: 80vh;
   }
-
 }
 
 @media only screen and (max-height: 500px) and (orientation: landscape) {
-  .text-mapa h1{
+  .text-mapa h1 {
     font-size: 2.5rem;
     color: var (--dark-blue);
     margin-bottom: 1rem;
   }
-  .social-media{
+  .social-media {
     bottom: 10px;
   }
-  .wrapper{
+  .wrapper {
     bottom: 10px;
     position: relative;
   }
-  .mapa{
+  .mapa {
     margin-top: 1rem;
   }
-  .wrapper .icon span{
+  .wrapper .icon span {
     width: 40px;
     height: 40px;
   }
-  .wrapper .icon span i{
+  .wrapper .icon span i {
     line-height: 45px;
     font-size: 20px;
   }
-  .menu-contact-wrapper{
+  .menu-contact-wrapper {
     height: 150vh;
   }
 }
