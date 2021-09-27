@@ -9,7 +9,7 @@
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1025px) and (max-width: 1366px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
   .main-img img {
     width: 550px;
   }
@@ -263,7 +263,6 @@
 
   .section-wrapper {
     flex-direction: column;
-
     margin-top: 120px;
     text-align: left;
     padding: 0;
@@ -273,7 +272,7 @@
 
   .section-video {
     box-shadow: none;
-    height: 100%;
+    overflow: hidden;
   }
 
   .background-contact {
@@ -416,6 +415,11 @@
       gap: 2rem;
     }
 
+    /* Sobre nos */
+
+    .background-contact{
+      height: calc(200vh);
+    }
     .text-mapa p {
       font-size: 1.5rem;
     }

@@ -453,6 +453,7 @@ footer {
 .background-contact {
   background-image: url("../assets/fundo.png");
   background-repeat: no-repeat;
+  
 }
 .text-mapa {
   display: flex;
