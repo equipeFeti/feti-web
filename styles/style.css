@@ -750,15 +750,18 @@ footer {
   display: flex;
 }
 
+/* banco de talentos */
+
 #main-bt {
   position: aboslute;
   top: 0;
   height: calc(100vh - 100px);
   
-
+  
   width: 100%;
   display: flex;
   justify-content: center;
+ 
   align-items: center;
   padding: 0 2rem;
 }
@@ -767,10 +770,10 @@ footer {
   width: 100%;
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-
 }
 
 .bt-resume {

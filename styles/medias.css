@@ -376,6 +376,14 @@
     width: 100%;
   }
 
+  /* banco de talentos */
+
+  #main-bt {
+    margin-top: 100px;
+    
+  }
+
+
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) {
     /*Home*/
@@ -542,6 +550,18 @@
     .documents-wrapper h2 {
       font-size: 2rem;
     }
+
+    .main-bt-wrapper {
+      flex-direction: column;
+    }
+
+    .bt-resume h1 {
+      font-size: 2rem;
+    }
+
+    .bt-resumme p {
+      font-size: 1.2rem;
+    }
   }
 
   /* some fixes */
@@ -561,6 +581,10 @@
 
     .wrapper {
       bottom: 20px;
+    }
+
+    .main-bt-wrapper {
+      flex-direction: column;
     }
   }
 }
