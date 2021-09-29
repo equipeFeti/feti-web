@@ -12,9 +12,9 @@
 body {
   font-family: "Proxima Nova", sans-serif;
 }
-
 .content {
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 :root {
@@ -366,11 +366,10 @@ footer {
   align-items: center;
   flex-direction: row;
 }
-.background-sobre {
+.sobre-nos {
   background-image: url("../assets/fundo.png");
   width: 100%;
   background-repeat: no-repeat;
-  height: calc(100vh - 100px);
 }
 .section-text {
   flex: 1;
@@ -450,10 +449,10 @@ footer {
   gap: 2rem;
   padding: 0rem 2rem;
 }
-.background-contact {
+.menu-contact {
   background-image: url("../assets/fundo.png");
   background-repeat: no-repeat;
-  
+  object-fit: contain;
 }
 .text-mapa {
   display: flex;
