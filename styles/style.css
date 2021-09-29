@@ -749,3 +749,73 @@ footer {
 .owl-stage {
   display: flex;
 }
+/*Admin*/
+.admin-wrapper{
+  height: calc(100vh - 100px);
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 2rem;
+  gap: 1rem;
+}
+.admin-logo {
+  flex: 0.6;
+  display: flex;
+  align-items: flex-end;
+
+}
+.admin-form-wrapper {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.admin-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group input {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+
+  border: 2px solid var(--cian);
+  border-radius: 8px;
+  
+  height: 3rem;
+  
+  padding-left: 10px;
+}
+
+.input-group label{
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+.admin-send-btn {
+  width: 100%;
+  height: 2.5rem;
+
+  font-size: 1.2rem;
+  padding: 0 2rem;
+
+}
+#logo-admin{
+  width: 20rem;
+}
+

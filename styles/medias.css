@@ -376,6 +376,13 @@
     width: 100%;
   }
 
+  .admin-wrapper{
+    margin-top: 50px;
+    gap: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) {
     /*Home*/
@@ -656,12 +663,29 @@
   .btn {
     width: 40%;
   }
+  .admin-send-btn
+{
+  width:100%;
+}
+#logo-admin{
+  width: 15rem;
+}
+.input-group input
+{
+  width: 100%;
+
+}
   .section-text #aboutText {
     max-height: 63vh;
   }
 
   .owl-theme .owl-nav {
     width: 95%;
+  }
+  .admin-wrapper{
+
+    gap: 1rem;
+    
   }
 }
 @media (max-width: 280px) {
@@ -717,3 +741,4 @@
     height: 150vh;
   }
 }
+
