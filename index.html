@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/medias.css" />
-
+    <!--Owl Carousel-->
     <link rel="stylesheet" href="./carousel/owl.carousel.css" />
     <link rel="stylesheet" href="carousel/owl.theme.default.min.css" />
+  
     <link href="assets/logo.png" rel="icon" />
     <script
       src="https://kit.fontawesome.com/710ee36645.js"
@@ -15,22 +16,30 @@
     ></script>
     <title>Feti</title>
   </head>
-  <body>
+  <body onload="initializeFirebase()">
+    
     <div class="loading">
       <img src="./assets/logo.png" alt="carregando..." />
     </div>
-    <div class="content" style="visibility: hidden">
+
+    <div class="content" style="visibility: hidden" >
       <header>
         <div class="header-wrapper">
+
           <div class="logo-wrapper">
             <a href="index.html"> <img src="./assets/logo.png" alt="feti" id="logo" /></a>
           </div>
+
           <div class="hamburguer-menu">
+
             <span class="hamb-lines"></span>
             <span class="hamb-lines"></span>
             <span class="hamb-lines"></span>
+
           </div>
+
           <div class="menu-wrapper">
+
             <ul class="menu-wrapper-ul">
               <a href="index.html"><li class="after">Home</li></a>
               <a href="sobreNos.html"><li class="after">Sobre Nós</li></a>
@@ -38,9 +47,11 @@
               <a href="editais.html"><li>Editais</li></a>
               <a href="regimentos.html"><li>Legislação</li></a>
             </ul>
+
           </div>
         </div>
       </header>
+
       <main class="main-home">
         <div class="main-wrapper">
          
@@ -59,6 +70,7 @@
 
         </div>
       </main>
+
       <section class="instagram-section">
         <div class="instagram-text">
             <h1><a target="blank" href="https://www.instagram.com/fetiuberaba/">@fetiuberaba</a></h1>
@@ -73,44 +85,15 @@
       <p>&copy FETI Uberaba</p>
     </footer>
 
+    <!--My Scripts-->
+    <script src="script.js"></script>
+
+    <!--Owl Carousel Scripts-->
     <script src="./carousel/jquery.min.js"></script>
     <script src="./carousel/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
-    <script
-      type="text/javascript"
-      src="instafeed.min.js"
-    ></script>
 
-    <script type="text/javascript">
-      var feed = new Instafeed({
-        accessToken:
-          "IGQVJWNTFRaTVJUk9adUxSWmJwSGRheHdfOVJHV3FvOGVWSFFLRjctYS1ZAeUw4S2RxUUVVbEZAqdl8ta2NMOURIMk80akxiZA2VfUFJNSWhub0pqdHRqRXFoaHUxbEdxU3VQc0p2ZATNoUUZAlaUtJUmtFSAZDZD",
-        template:
-          '<div class="instagram-image"><a target="blank" href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a> </div>',
-        after: function () {
-          $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-              loop: false,
-              margin: 20,
-              nav: true,
-              mouseDrag: true,
-              dotsContainer: "#carousel-custom-dots",
-              
-              responsive: {
-                0: {
-                  items: 1
-                },
-
-                600: {
-                  items: 3
-                }
-              }
-  
-            });
-          });
-        },
-      });
-      feed.run();
-    </script>
+    <!--InstaFeed Scripts-->
+    <script type="text/javascript"src="instafeed/instafeed.min.js"></script>
+    <script type="text/javascript"src="instafeed/instafeed.js"></script>
   </body>
 </html>
