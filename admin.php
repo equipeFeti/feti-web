@@ -76,7 +76,7 @@
               <input
                 type="text"
                 id="user"
-                name="name"
+                name="use"
                 placeholder="Coloque seu usuário aqui"
               />
             </div>
@@ -94,7 +94,17 @@
             <button class="admin-send-btn btn">Entrar</button>
 
           </form>
+        <?php 
+        if((isset($_POST('user')) && (isset($_POST('password')))))
+        {
 
+
+        }else{
+          
+        }
+        
+        
+        ?>
           
           
           
