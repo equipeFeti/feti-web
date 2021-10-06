@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("../assets/cursor.png"), auto;
 }
 body {
   font-family: "Proxima Nova", sans-serif;
@@ -753,64 +752,132 @@ footer {
 /* banco de talentos */
 
 #main-bt {
-  position: aboslute;
-  top: 0;
   height: calc(100vh - 100px);
-  
-  
   width: 100%;
-  display: flex;
-  justify-content: center;
- 
-  align-items: center;
-  padding: 0 2rem;
-}
+  max-width: 1220px;
+  margin: 0 auto;
 
-.main-bt-wrapper {
-  width: 100%;
-  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  padding: 0 2rem;
   gap: 2rem;
 }
 
 .bt-resume {
-  flex: 1;
+  flex: 1;   
 }
 
-
-
-.bt-resume h1{
-  font-size: 3rem;
+.bt-resume h1 {
+  font-size: 2.5rem;
   color: var(--light-blue);
 }
 
 .bt-resume p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--dark-blue);
 }
 
-.bt-options {
+.bt-options{
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.bt-options h3{
-  font-size: 2rem;
+.bt-option h3{
+  font-size: 1.5rem;
   color: var(--light-blue);
 }
 
-.bt-options p {
+.bt-option p {
   font-size: 1.2rem;
   color: var(--dark-blue);
 }
 
-.bt-options button {
+.bt-option button {
   margin-top: 16px;
-  box-shadow: 10px 10px 0px var(--cian);
+  box-shadow: 10px 10px 0 var(--cian);
   font-size: 1.1rem;
+}
+
+/* pcd-register */
+
+
+.pcd-register-title {
+  flex: 1;
+}
+
+.pcd-register-title h1 {
+  font-size: 2.5rem;
+  color: var(--light-blue);
+}
+
+.pcd-register-title p {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+}
+
+.pcd-register-form-wrapper {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pcd-register-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group input {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+
+  border: 2px solid var(--cian);
+  border-radius: 8px;
+  
+  height: 3rem;
+  
+  padding-left: 10px;
+}
+
+.input-group label{
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+
+.register-form-btn {
+  width: 100%;
+  height: 2.5rem;
+
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+
+.alarm-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  width: 20rem;
+  height: 10rem;
+
+  font-size: 1.5rem;
+
+  border-radius: 16px;
+  background: var(--yellow);
+  color: var(--dark-blue);
 }

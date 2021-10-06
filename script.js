@@ -1,5 +1,4 @@
-const hambButton = document.querySelector(".hamburguer-menu");
-const menu = document.querySelector(".menu-wrapper-ul");
+
 const body = document.querySelector("#body");
 const readMore = document.querySelector(".read-more-btn");
 const aboutTextMore = document.querySelector("#aboutTextMore");
@@ -7,11 +6,27 @@ const aboutText = document.querySelector("#aboutText");
 const aboutTextIntroduction = document.querySelector("#aboutTextIntroduction");
 const loadingScreen = document.querySelector(".loading");
 const allContent = document.querySelector(".content");
-const menuLines = document.querySelectorAll(".hamb-lines");
 
-controler = 1;
+const name  = document.querySelector("#name"); 
+const age  = document.querySelector("#age"); 
+const email  = document.querySelector("#email"); 
+const cel  = document.querySelector("#cel");
+const submitBtn  = document.querySelector(".register-form-btn");
+const alarmBox  = document.querySelector(".alarm-box");
+
+/* Tela de loading */
+
+window.addEventListener("load", () => {
+  loadingScreen.style.display = "none";
+  allContent.style.visibility = "visible";
+});
+
 
 /* Responsive Menu */
+
+const menuLines = document.querySelectorAll(".hamb-lines");
+const hambButton = document.querySelector(".hamburguer-menu");
+const menu = document.querySelector(".menu-wrapper-ul");
 
 hambButton.addEventListener('click', () => {
   menu.classList.toggle('show');
@@ -20,13 +35,6 @@ hambButton.addEventListener('click', () => {
   menuLines[1].classList.toggle('rotate1')
   menuLines[2].classList.toggle('rotate2')
 })
-
-/* Tela de loading */
-
-window.addEventListener("load", () => {
-  loadingScreen.style.display = "none";
-  allContent.style.visibility = "visible";
-});
 
 /* adjust title of editais/documents */
 
@@ -38,7 +46,6 @@ for (let i = 0; i < documentsTitle.length; i++) {
     documentsTitle[i].style.padding = "1rem";
   }
 }
-
 /*Read more - sobreNos */
 
 readMore.addEventListener("click", () => {
@@ -54,3 +61,23 @@ readMore.addEventListener("click", () => {
     aboutTextIntroduction.style.display = "block";
   }
 });
+
+// banco de talentos
+
+submitBtn.addEventListener("click", e => {
+  
+  if (name.value == '' || age.value == '' || email.value == '' || cel.value == '') {
+    e.preventDefault();
+    alarmBox.style.display = 'flex'
+    alarmBox.style.right = '25px'
+    alarmBox.style.top = "150px"
+  } 
+})
+
+alarmBox.addEventListener('click', e => {
+  
+  e.target.style.right = "-999px"
+})
+
+
+
