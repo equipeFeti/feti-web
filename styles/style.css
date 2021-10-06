@@ -750,8 +750,8 @@ footer {
 }
 
 /* banco de talentos */
-
-#main-bt {
+/*Admin*/
+.admin-wrapper{
   height: calc(100vh - 100px);
   width: 100%;
   max-width: 1220px;
@@ -759,6 +759,7 @@ footer {
 
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -821,6 +822,15 @@ footer {
 }
 
 .pcd-register-form-wrapper {
+  gap: 1rem;
+}
+.admin-logo {
+  flex: 0.6;
+  display: flex;
+  align-items: flex-end;
+
+}
+.admin-form-wrapper {
   height: 100%;
   flex: 1;
   display: flex;
@@ -829,6 +839,10 @@ footer {
 }
 
 .pcd-register-form {
+  align-items: flex-start;
+
+}
+.admin-form {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -858,7 +872,8 @@ footer {
   color: var(--light-blue);
 }
 
-.register-form-btn {
+.register-form-btn,
+.admin-send-btn {
   width: 100%;
   height: 2.5rem;
 
@@ -881,3 +896,8 @@ footer {
   background: var(--yellow);
   color: var(--dark-blue);
 }
+
+#logo-admin{
+  width: 20rem;
+}
+
