@@ -34,7 +34,7 @@
         <div class="header-wrapper">
 
           <div class="logo-wrapper">
-            <a href="index.html"> <img src="./assets/logo.png" alt="feti" id="logo" /></a>
+            <a href="index.php"> <img src="./assets/logo.png" alt="feti" id="logo" /></a>
           </div>
 
           <div class="hamburguer-menu">
@@ -107,7 +107,9 @@
 
     <!--InstaFeed Scripts-->
     <script type="text/javascript"src="instafeed/instafeed.min.js"></script>
-    <script type="text/javascript"src="instafeed/instafeed.js"></script>
+    <script type="text/javascript">
+      <?php require_once("../instafeed_api/instafeed.js") ?>
+    </script>
      <!-- Google Tag Manager (noscript) -->
   <noscript></noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

@@ -14,6 +14,7 @@ const cel  = document.querySelector("#cel");
 const submitBtn  = document.querySelector(".register-form-btn");
 const alarmBox  = document.querySelector(".alarm-box");
 
+
 /* Tela de loading */
 
 window.addEventListener("load", () => {
@@ -46,6 +47,22 @@ for (let i = 0; i < documentsTitle.length; i++) {
     documentsTitle[i].style.padding = "1rem";
   }
 }
+
+/* cel mask */
+
+if (window.location.href.includes('cadastroPCD')) {
+  cel.addEventListener('keydown', e => {
+
+    let celInputValue = cel.value
+  
+    celInputValue = celInputValue.replace(/\D/g,'');
+    celInputValue = celInputValue.replace(/(^\d{2})(\d)/,'($1) $2');
+    celInputValue = celInputValue.replace(/(\d{4,5})(\d{3}$)/,'$1-$2');
+  
+    e.target.value = celInputValue;
+  })
+}
+
 /*Read more - sobreNos */
 
 readMore.addEventListener("click", () => {
@@ -78,6 +95,5 @@ alarmBox.addEventListener('click', e => {
   
   e.target.style.right = "-999px"
 })
-
 
 
