@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/medias.css" />
+    <link rel="stylesheet" href="admin.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,50 +68,31 @@
         <div class="admin-logo">
             <img src="assets/logo1.png" id="logo-admin">
         </div>
-
         <div class="admin-form-wrapper">
-          <form action="admin.php" method="POST" class="admin-form">
+          <form action="admin-back.php" method="POST" class="admin-form">
             <div class="input-group">
 
-              <label for="name">Usuário</label>
+              <label for="user">Usuário</label>
               <input
                 type="text"
                 id="user"
-                name="use"
+                name="user"
                 placeholder="Coloque seu usuário aqui"
               />
             </div>
 
             <div class="input-group">
-              <label for="age">Senha</label>
+              <label for="password">Senha</label>
               <input
                 type="password"
                 id="password"
-                name="age"
+                name="password"
                 placeholder="Coloque a senha aqui"
               />
             </div>
 
             <button class="admin-send-btn btn">Entrar</button>
-
-          </form>
-        <?php 
-        if((isset($_POST('user')) && (isset($_POST('password')))))
-        {
-
-
-        }else{
-          
-        }
-        
-        
-        ?>
-          
-          
-          
-          
-          
-          
+          </form>     
         </div>
       </main>
     </div>

@@ -851,7 +851,8 @@ footer {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  width: 320px;
 }
 
 .pcd-register-form {
@@ -864,6 +865,7 @@ footer {
   flex: 1;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .input-group {
@@ -925,4 +927,6 @@ footer {
 #logo-admin{
   width: 20rem;
 }
-
+.logout btn{
+  background-color: blueviolet;
+}
