@@ -1,6 +1,11 @@
 <?php
 
 session_start();
+
+if(!isset($_SESSION['user'])){
+
+    header('Location:admin.php');
+}
 ?>
 
 <html lang="en">
@@ -12,9 +17,8 @@ session_start();
     <title>admin-page</title>
 </head>
 <body>
-    
+<h2>Olá <?php echo $_SESSION['user'] ; ?></h2>
+<a href="logout.php" class = "logout btn">logout</a>
 </body>
 </html>
 
-<h2>Olá <?php echo $_SESSION['user'] ; ?></h2>
-<a href="logout.php" class = "logout btn">logout</a>

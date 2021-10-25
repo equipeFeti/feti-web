@@ -1,0 +1,18 @@
+  if(empty($_POST['user'])){
+        
+        $user_error =" <div class='error'> Usuario vazio</div> ";
+      }
+      else {
+        
+            $user = $conn_login->real_escape_string($_POST['user']);
+          
+      }
+      if(empty($_POST['password'])){
+        
+        $password_error = " <div class ='error'>Senha vazia </div> ";
+      }
+      else{
+        
+        $senha = $conn_login->real_escape_string($_POST['password']);
+          
+      }

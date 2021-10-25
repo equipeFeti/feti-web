@@ -1,7 +1,11 @@
 <?php
-session_start();
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
 session_destroy();
-header('Location: admin.php');
-exit();
+
+header('Location:admin.php');
 
 ?>
