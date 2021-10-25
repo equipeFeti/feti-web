@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body, 
+textarea, 
+button {
   font-family: "Proxima Nova", sans-serif;
 }
 .content {
@@ -822,21 +824,26 @@ footer {
 /* pcd-register */
 
 
-.pcd-register-title {
+.form-title{
   flex: 1;
 }
 
-.pcd-register-title h1 {
+.form-title h1 {
   font-size: 2.5rem;
   color: var(--light-blue);
 }
 
-.pcd-register-title p {
+.form-title p {
   font-size: 1.2rem;
   color: var(--dark-blue);
 }
 
-.pcd-register-form-wrapper {
+.form-title h2 {
+  color: var(--dark-blue);
+  margin-top: 10px;
+}
+
+.form-title {
   flex: 1;
   gap: 1rem;
 }
@@ -854,7 +861,7 @@ footer {
   align-items: center;
 }
 
-.pcd-register-form {
+.form {
   align-items: flex-start;
   flex: 1;
 
@@ -873,6 +880,31 @@ footer {
   margin-top: 1rem;
 }
 
+.radio-group {
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  border: 2px solid var(--cian);
+  border-radius: 8px;
+}
+
+
+
+.ativa-box{
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+ 
+}
+.align-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 
 
 .input-group input {
@@ -885,6 +917,21 @@ footer {
   height: 3rem;
   
   padding-left: 10px;
+}
+
+.input-group textarea {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+
+  border: 2px solid var(--cian);
+  border-radius: 8px;
+  
+  padding-left: 10px;
+
+  max-width: 60vh;
+  min-width: 60vh;
+
+  max-height: 6rem;
 }
 
 
@@ -938,14 +985,16 @@ footer {
   width: 20rem;
 }
 
-.main-showPCD{
+#main-bt.main-showEmpresas{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0;
+  gap: 4rem;
+  height: unset;
+  margin-top: 120px;
 }
 
-.main-showPCD .pcd-register-title {
+.main-showEmpresas .form-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -956,17 +1005,19 @@ footer {
   width: 100%;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 
 
 
-.pcd-info {
+.empresas-info {
   display: flex;
-  justify-content: space-around;
+  
   align-items: center;
   width: 100%;
+  max-width: 500px;
   gap: 1rem;
 }
 
@@ -976,16 +1027,16 @@ footer {
   justify-content: flex-end;
 }
 
-.pcd-info .btn {
+.empresas-info .btn {
   font-size: 1.1rem;
   max-width: 10rem;  
 }
 
-.pcd-info h1 {
+.empresas-info h1 {
   color: var(--light-blue);
 }
 
-.pcd-info h3 {
+.empresas-info h3 {
   color: var(--dark-blue);
 }
 
@@ -1009,6 +1060,8 @@ footer {
   align-items: center;
  
   margin: 0 auto;
+
+  background: var(--cian);
 }
 
 
@@ -1041,4 +1094,52 @@ footer {
   border-radius: 16px;
   cursor: pointer;
   box-shadow: 10px 10px var(--cian);
+}
+
+.anyPCD {
+  
+  width: 100%;
+  text-align: center;
+  color: var(--dark-blue);
+
+  transform: translateY(10%);
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  padding: 0 2rem;
+}
+
+.search-btn:hover{
+  box-shadow: none;
+}
+
+.btn-edit {
+  padding: 0.5rem 2rem;
+  line-height: 4rem;
+}
+
+.btn-edit:hover{
+  box-shadow: none;
+}
+
+.ativa-box {
+  display: flex;
+}
+
+.search-group {
+  width: 94%;
+  border: 0;
+}
+
+.search-group .ativa-box {
+  margin-left: 1rem;
 }

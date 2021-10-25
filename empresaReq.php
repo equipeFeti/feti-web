@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/medias.css" />
+  <script src="https://kit.fontawesome.com/710ee36645.js" crossorigin="anonymous"></script>
   <link href="assets/logo.png" rel="icon" />
-  <title>Cadastro PCD</title>
+  <title>Entre em contato</title>
 </head>
 
 <body style=" overflow-x: hidden;">
@@ -24,45 +26,55 @@
           <span class="hamb-lines"></span>
           <span class="hamb-lines"></span>
           <span class="hamb-lines"></span>
-         </div>
+        </div>
         <div class="menu-wrapper">
           <ul class="menu-wrapper-ul">
-            <a href="index.php"><li class="after">Home</li></a>
-            <a href="sobreNos.html"><li class="after">Sobre Nós</li></a>
-            <a href="contact.html"><li class="after">Contato</li></a>
-            <a href="editais.html"><li>Editais</li></a>
-            <a href="regimentos.html"><li>Legislação</li></a>
-            <a href="cadastroPCD.html"><li>Banco de talentos PCD</li></a>
+            <a href="index.php">
+              <li class="after">Home</li>
+            </a>
+            <a href="sobreNos.html">
+              <li class="after">Sobre Nós</li>
+            </a>
+            <a href="contact.html">
+              <li class="after">Contato</li>
+            </a>
+            <a href="editais.html">
+              <li>Editais</li>
+            </a>
+            <a href="regimentos.html">
+              <li>Legislação</li>
+            </a>
+            <a href="bancoTalentos.html">
+              <li>Banco de talentos</li>
+            </a>
           </ul>
         </div>
       </div>
     </header>
 
-      <div class="alarm-box" style=" position: absolute; right: -999px; transition: all 0.5s;">
-        <p>Preencha todos os campos</p>
-      </div>
-    
     <main id="main-bt">
+    
+
       <div class="form-title">
-        <h1>Queremos conhecer você</h1>
-        <p>Preencha seus dados e se cadastre no nosso banco de talentos!</p>
+        <h1>Sou uma empresa!</h1>
+        <p>Nos informe o que precisa e aguarde contato!</p>
       </div>
 
-      <div class="form">
-        <form action="cadPCD.php" method="POST"class="form" enctype="multipart/form-data">
+        <div class="form">
+        <form action="cadEmpresaInfo.php" method="POST"class="pcd-register-form">
           <div class="input-group">
             <label for="name">Nome</label>
-            <input type="text" id="name"name="name"placeholder="ex: João da silva"  title="Insira seu nome completo"required>
+            <input type="text" id="name"name="name"placeholder="ex: EmpresaXYZ"  title="Insira seu nome completo"required>
           </div>
 
           <div class="input-group">
-            <label for="age">Idade</label>
-            <input type="number" id="age"name="age"placeholder="ex: 17" min="14" required>
+            <label for="age">Assunto</label>
+            <input type="text" id="assunto"name="assunto"placeholder="ex: Contratação de aprendizes" required>
           </div>
 
           <div class="input-group">
             <label for="email">Email</label>
-            <input type="email" id="email"name="email"placeholder="ex: joaodasilva@gmail.com" required>
+            <input type="email" id="email"name="email"placeholder="ex: empresaxyz@gmail.com" required>
           </div>
 
           <div class="input-group">
@@ -71,16 +83,17 @@
           </div>
 
           <div class="input-group">
-            <label for="curriculo">Currículo</label>
-            <input type="file" class="input-file" name="curriculo" required>
+            <label for="msg">Mensagem</label>
+            <textarea name="msg" id="msg" cols="30" rows="5" placeholder="ex: Quero contratar 2 aprendizes..."></textarea>
           </div>
 
           <button class="register-form-btn btn">Enviar</button>
           <a href="bancoTalentos.html"><button type="button" class= "register-form-btn btn">Voltar</button></a>
         </form>
-      </div>
+        </div>
+      
     </main>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

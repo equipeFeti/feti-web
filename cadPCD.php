@@ -13,7 +13,7 @@
   <?php
 
   require 'conexao.php';
-
+ 
 
   $curriculo = $_FILES['curriculo'];
   $isCurriculoExtensionRight = true;
@@ -22,17 +22,17 @@
   $extensao =  explode('.', $curriculo['name']);
 
   if ($extensao[1] != 'pdf') {
-    $isCurriculoExtensionRight = false;
+  $isCurriculoExtensionRight = false;
   };
 
-  $curriculoName = str_replace(' ', '', $curriculo['name']); 
+
   $name = $_POST['name'];
+  $curriculoName = str_replace(' ', '', 'curriculo_'.$name.'.pdf'); 
   $age = $_POST['age'];
   $email = $_POST['email'];
   $cel = $_POST['cel'];
 
   $sql = "INSERT INTO `pcd`(`nome`, `idade`, `email`, `cel`,`cv_name`) VALUES ('$name','$age','$email','$cel', '$curriculoName')";
-  
   
   ?>
 
@@ -45,6 +45,7 @@
 
       if ($isCurriculoExtensionRight) {
         if (mysqli_query($conn, $sql) && move_uploaded_file($curriculo['tmp_name'], 'uploads/'.$curriculoName)) {
+          
           echo 
           "<div class=" .$class. ">
             <h1>Pronto, você foi cadastrado !</h1>

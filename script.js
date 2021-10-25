@@ -50,7 +50,7 @@ for (let i = 0; i < documentsTitle.length; i++) {
 
 /* cel mask */
 
-if (window.location.href.includes('cadastroPCD')) {
+if (window.location.href.includes('cadastroPCD') ||window.location.href.includes('empresaReq')) {
   cel.addEventListener('keydown', e => {
 
     let celInputValue = cel.value

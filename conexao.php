@@ -1,9 +1,17 @@
 <?php
 
+/*$server = "localhost";
+$user = "root";
+$pass = "";
+$db_pcd = "pcd_bt";
+
+$conn = mysqli_connect($server, $user, $pass, $db_pcd);
+*/
+
 $server = "localhost";
 $user = "root";
 $pass = "";
-$db = "pcd_bt";
+$empresas_cadastradas = "empresas_cadastradas";
 
-$conn = mysqli_connect($server, $user, $pass, $db);
+$empresas_cadastradas_conn = mysqli_connect($server, $user, $pass, $empresas_cadastradas);
 ?>

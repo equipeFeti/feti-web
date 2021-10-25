@@ -48,7 +48,7 @@
           <div class="menu-wrapper">
 
             <ul class="menu-wrapper-ul">
-              <a href="index.html"><li class="after">Home</li></a>
+              <a href="index.php"><li class="after">Home</li></a>
               <a href="sobreNos.html"><li>Sobre Nós</li></a>
               <a href="contact.html"><li>Contato</li></a>
               <a href="editais.html"><li>Editais</li></a>

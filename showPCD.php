@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles/medias.css" />
   <script src="https://kit.fontawesome.com/710ee36645.js" crossorigin="anonymous"></script>
   <link href="assets/logo.png" rel="icon" />
-  <title>Sou uma empresa</title>
+  <title>PCD'S</title>
 </head>
 
 <body style=" overflow-x: hidden;">
@@ -44,7 +44,7 @@
             <a href="regimentos.html">
               <li>Legislação</li>
             </a>
-            <a href="cadastroPCD.html">
+            <a href="bancoTalentos.html">
               <li>Banco de talentos</li>
             </a>
           </ul>
@@ -56,12 +56,10 @@
       <div class="pcd-register-title">
         <h1>Conheça os PCD'S cadastrados no nosso banco de talentos</h1>
       </div>
-      <div class="pcd-list" style="display: flex; flex-direction: column; gap: 2; overflow-y: scroll; height: 50vh;  padding-right: 17px;
-      box-sizing: content-box;">
+      <div class="pcd-list">
         <?php
           require 'conexao.php';
-          
-
+        
           //Send CV 
 
           $formatoCurriculo = "pdf";
@@ -69,8 +67,17 @@
           $pcd_info_class = "pcd-info";
          
           $sql = "select * FROM pcd";
+          $sqlCount = "select count id FROM pcd";
 
-          $dados = mysqli_query($conn, $sql);
+          $dados = $conn->query( $sql);
+          $count = mysqli_num_rows($dados);
+
+          
+          if ($count == null) {
+            echo
+             "<h1 class="."anyPCD".">Ooops ! Parece que nenhum PCD foi cadastrado ainda :/ </h1>";
+          }
+
 
           while ($linha = mysqli_fetch_assoc($dados)) {
             $nome = $linha['nome'];    
@@ -78,6 +85,7 @@
             $email = $linha['email'];
             $cel = $linha['cel'];
             $curriculoName = $linha['cv_name'];
+            
             
             echo 
             "<div class=$pcd_info_class>
@@ -87,10 +95,12 @@
                 <h3>Cel: $cel</h3>
               </div>
               <div class="."download-button-wrapper".">
-                <a href="."./uploads/$curriculoName" ." class="."btn"." download="."curriculo"."> <button class="."btn-cv"."><i class="."fa fa-download"."></i> Download CV</button> </a>
+                <a href="."./uploads/$curriculoName" ." class="."btn"." download=".$curriculoName ."> <button class="."btn-cv"."><i class="."fa fa-download"."></i> Download CV</button> </a>
               </div>
            </div>";
         }
+
+        mysqli_close($conn);
         ?>
       </div>
     </main>
